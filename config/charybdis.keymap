@@ -109,37 +109,10 @@
 
         NAV {
             bindings = <
-&none   &none   &none   &none   &none   &none     &detach_session  &create_or_attach  &next_pane  &show_sessions  &sync_panes      &none
-&trans  &trans  &trans  &trans  &trans  &none     &h_split         &kp LEFT_ARROW     &kp DOWN    &kp UP          &kp RIGHT_ARROW  &none
-&none   &none   &none   &none   &none   &none     &v_split         &kp HOME           &kp PG_DN   &kp PG_UP       &kp END          &none
-                        &none   &none   &trans    &trans           &trans
-            >;
-        };
-
-        GAME {
-            bindings = <
-&kp N1  &kp TAB    &kp Q  &kp W  &kp E      &kp R           &none  &none  &none  &none  &none  &trans
-&kp N2  &kp LCTRL  &kp A  &kp S  &kp D      &kp F           &none  &none  &none  &none  &none  &none
-&kp N3  &kp LSHFT  &kp Z  &kp X  &kp C      &kp V           &none  &none  &none  &none  &none  &none
-                          &none  &kp SPACE  &kp LEFT_ALT    &none  &none
-            >;
-        };
-
-        SLOW {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
-            >;
-        };
-
-        SCROLL {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
+&none   &none   &none   &none   &none   &none     &none     &none           &kp UP_ARROW  &none      &none    &none
+&trans  &trans  &trans  &trans  &trans  &none     &kp HOME  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp END  &none
+&none   &none   &none   &none   &none   &none     &none     &kp PAGE_DOWN   &none         &kp PG_UP  &none    &none
+                        &none   &none   &trans    &trans    &trans
             >;
         };
     };
