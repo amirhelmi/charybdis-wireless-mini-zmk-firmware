@@ -98,12 +98,12 @@
             >;
         };
 
-        NUM {
+        layer_3 {
             bindings = <
-&trans  &none  &none  &none  &none          &none        &kp ASTRK   &hm F7 N7  &hm F8 N8  &hm F9 N9  &kp F10        &none
-&trans  &none  &none  &none  &none          &none        &kp MINUS   &hm F4 N4  &hm F5 N5  &hm F6 N6  &hm F11 PLUS   &trans
-&none   &none  &none  &none  &kp BACKSPACE  &kp SPACE    &td_equals  &hm F1 N1  &hm F2 N2  &hm F3 N3  &hm F12 SLASH  &none
-                      &none  &none          &trans       &kp DOT     &kp N0
+&trans  &trans  &trans  &trans        &trans        &trans    &trans  &trans        &trans  &trans        &trans  &trans
+&trans  &kp N9  &kp N5  &kp NUMBER_1  &kp NUMBER_3  &trans    &trans  &kp NUMBER_2  &kp N0  &kp NUMBER_4  &kp N8  &trans
+&trans  &trans  &trans  &trans        &kp N7        &trans    &trans  &kp NUMBER_6  &trans  &trans        &trans  &trans
+                        &trans        &trans        &trans    &trans  &trans
             >;
         };
 
