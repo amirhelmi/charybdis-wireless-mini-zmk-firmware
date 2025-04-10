@@ -91,19 +91,19 @@
 
         BASE {
             bindings = <
-&none  &kp W  &kp L  &kp Y       &kp R      &kp B     &kp Z         &kp F      &kp O      &kp U       &kp SQT    &none
-&none  &kp C  &kp R  &kp S       &kp T      &kp G     &kp M         &kp N      &kp E      &kp I       &kp A      &none
-&none  &kp Q  &kp J  &kp V       &kp D      &kp K     &kp X         &kp H      &kp COMMA  &kp PERIOD  &kp SLASH  &none
-                     &td_cursor  &mkp LCLK  &td_bs    &lt 0 RETURN  &td_space
+&none  &kp W  &kp L  &kp Y      &kp R        &kp B        &kp Z           &kp F        &kp O      &kp U       &kp SQT    &none
+&none  &kp C  &kp R  &kp S      &kp T        &kp G        &kp M           &kp N        &kp E      &kp I       &kp A      &none
+&none  &kp Q  &kp J  &kp V      &kp D        &kp K        &kp X           &kp H        &kp COMMA  &kp PERIOD  &kp SLASH  &none
+                     &mkp LCLK  &lt 1 SPACE  &lt 3 TAB    &sk LEFT_SHIFT  &key_repeat
             >;
         };
 
-        layer_3 {
+        num {
             bindings = <
-&trans  &trans  &trans  &trans        &trans        &trans    &trans  &trans        &trans  &trans        &trans  &trans
-&trans  &kp N9  &kp N5  &kp NUMBER_1  &kp NUMBER_3  &trans    &trans  &kp NUMBER_2  &kp N0  &kp NUMBER_4  &kp N8  &trans
-&trans  &trans  &trans  &trans        &kp N7        &trans    &trans  &kp NUMBER_6  &trans  &trans        &trans  &trans
-                        &trans        &trans        &trans    &trans  &trans
+&trans  &trans  &trans  &trans          &trans        &trans    &trans  &trans        &trans  &trans        &trans  &trans
+&trans  &kp N9  &kp N5  &lt 2 NUMBER_1  &kp NUMBER_3  &trans    &trans  &kp NUMBER_2  &kp N0  &kp NUMBER_4  &kp N8  &trans
+&trans  &trans  &trans  &trans          &kp N7        &trans    &trans  &kp NUMBER_6  &trans  &trans        &trans  &trans
+                        &trans          &trans        &trans    &trans  &trans
             >;
         };
 
@@ -113,6 +113,15 @@
 &trans  &trans  &trans  &trans  &trans  &none     &kp HOME  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp END  &none
 &none   &none   &none   &none   &none   &none     &none     &kp PAGE_DOWN   &none         &kp PG_UP  &none    &none
                         &none   &none   &trans    &trans    &trans
+            >;
+        };
+
+        switch {
+            bindings = <
+&trans  &trans  &kp LG(N7)        &kp LG(N8)        &kp LG(N9)        &trans        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LG(NUMBER_4)  &kp LG(N5)        &kp LG(NUMBER_6)  &kp LG(N0)    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &trans        &trans  &trans  &trans  &trans  &trans  &trans
+                                  &trans            &trans            &trans        &trans  &trans
             >;
         };
     };
