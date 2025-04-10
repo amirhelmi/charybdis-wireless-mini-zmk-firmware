@@ -1,13 +1,9 @@
+#include <dt-bindings/zmk/mouse.h>
+#include <behaviors/mouse_keys.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
-#include <dt-bindings/zmk/outputs.h>
-#include <behaviors/mouse_keys.dtsi>
-#include <dt-bindings/zmk/ext_power.h>
-
-
-
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     /* input config for mouse move mode */
@@ -68,7 +64,7 @@
         time-to-live-ms = <750>;
     };
 
-combos {
+    combos {
         compatible = "zmk,combos";
 
         rparenth {
@@ -222,9 +218,6 @@ combos {
             key-positions = <16 37>;
         };
 
-      
-     
-
         cut {
             bindings = <&kp LC(X)>;
             key-positions = <14 15 16>;
@@ -265,14 +258,10 @@ combos {
             key-positions = <31 32 33>;
         };
 
-       
-
         f5 {
             bindings = <&kp F5>;
             key-positions = <4 5>;
         };
-
-       
 
         bluetoothone {
             bindings = <&bt BT_SEL 0>;
@@ -405,8 +394,6 @@ combos {
             label = "LEFTCLICK";
         };
 
-    
-
         repbor: repbor {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -414,7 +401,6 @@ combos {
             label = "REPBOR";
         };
     };
-
 
     // ╭──────┬──────┬──────┬──────┬──────┬──────╮  ╭──────┬──────┬──────┬──────┬──────┬──────╮
     //    00     01     02     03    04      05        06     07     08     09     10     11
@@ -426,16 +412,15 @@ combos {
     //                         36     37     38        39     40
     //                      ╰──────┴──────┴──────╯  ╰──────┴──────╯
 
-
     keymap {
         compatible = "zmk,keymap";
 
         BASE {
             bindings = <
-&none  &kp W  &kp L  &kp Y      &kp R        &kp B        &kp Z           &kp F        &kp O      &kp U       &kp SQT    &none
+&none  &kp W  &kp L  &kp Y      &kp P        &kp B        &kp Z           &kp F        &kp O      &kp U       &kp SQT    &none
 &none  &kp C  &kp R  &kp S      &kp T        &kp G        &kp M           &kp N        &kp E      &kp I       &kp A      &none
 &none  &kp Q  &kp J  &kp V      &kp D        &kp K        &kp X           &kp H        &kp COMMA  &kp PERIOD  &kp SLASH  &none
-                     &mkp LCLK  &lt 1 SPACE  &lt 3 TAB    &sk LEFT_SHIFT  &key_repeat
+                     &mkp LCLK  &lt 3 SPACE  &lt 1 TAB    &sk LEFT_SHIFT  &key_repeat
             >;
         };
 
