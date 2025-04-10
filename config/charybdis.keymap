@@ -7,6 +7,14 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 / {
+
+        td_cursor: td_scroll_or_cursor {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            bindings = <&lt 9 ESC>, <&mo 8>; // hold, tap, double_tap
+        };
+
+
     /* input config for mouse move mode */
 
     trackball_listener {

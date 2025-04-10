@@ -5,7 +5,7 @@ layers:
   - W
   - L
   - Y
-  - R
+  - P
   - B
   - Z
   - F
@@ -38,8 +38,8 @@ layers:
   - /
   - ''
   - L CLK
-  - {t: SPACE, h: num}
-  - {t: TAB, h: switch}
+  - {t: SPACE, h: switch}
+  - {t: TAB, h: num}
   - {t: LEFT SHIFT, h: sticky}
   - '&key_repeat'
   num:
@@ -80,8 +80,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   NAV:
@@ -122,8 +122,8 @@ layers:
   - ''
   - ''
   - ''
+  - ''
   - {type: held}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   switch:
@@ -164,8 +164,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
