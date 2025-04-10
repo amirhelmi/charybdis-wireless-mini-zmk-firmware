@@ -1,7 +1,8 @@
+layout: {zmk_keyboard: charybdis}
 layers:
   BASE:
   - DEV TOOLS
-  - Q
+  - W
   - W
   - E
   - R
