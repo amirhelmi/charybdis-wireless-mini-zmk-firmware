@@ -251,3 +251,5 @@ combos:
   k: {t: BT, h: '0'}
 - p: [10, 22]
   k: {t: BT, h: '1'}
+- p: [36, 37]
+  k: SCRL SLOW
