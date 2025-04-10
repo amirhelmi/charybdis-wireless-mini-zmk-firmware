@@ -222,30 +222,8 @@ combos {
             key-positions = <16 37>;
         };
 
-        f3 {
-            bindings = <&kp F3>;
-            key-positions = <15 37>;
-        };
-
-        fn12 {
-            bindings = <&kp F12>;
-            key-positions = <6 7>;
-        };
-
-        fn11 {
-            bindings = <&kp F11>;
-            key-positions = <18 19>;
-        };
-
-        f10 {
-            bindings = <&kp F10>;
-            key-positions = <30 31>;
-        };
-
-        f2 {
-            bindings = <&kp F2>;
-            key-positions = <17 16>;
-        };
+      
+     
 
         cut {
             bindings = <&kp LC(X)>;
@@ -287,10 +265,7 @@ combos {
             key-positions = <31 32 33>;
         };
 
-        altzero {
-            bindings = <&editoralt 0 0>;
-            key-positions = <1 2>;
-        };
+       
 
         f5 {
             bindings = <&kp F5>;
