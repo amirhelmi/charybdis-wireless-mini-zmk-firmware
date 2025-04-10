@@ -272,10 +272,7 @@ combos {
             key-positions = <4 5>;
         };
 
-        rightclick {
-            bindings = <&rightclick>;
-            key-positions = <40 41>;
-        };
+       
 
         bluetoothone {
             bindings = <&bt BT_SEL 0>;
@@ -408,12 +405,7 @@ combos {
             label = "LEFTCLICK";
         };
 
-        rightclick: rightclick {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp KP_SUBTRACT &kp KP_N5>;
-            label = "RIGHTCLICK";
-        };
+    
 
         repbor: repbor {
             compatible = "zmk,behavior-macro";
