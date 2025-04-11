@@ -257,17 +257,17 @@ combos:
   k: {t: ), h: ']'}
 - p: [6, 18]
   k: {t: '!', h: '@'}
-- p: [28, 16]
+- p: [28, 27]
   k: ENTER
 - p: [37, 14]
   k: {t: (, h: '['}
-- p: [31, 32]
+- p: [31, 19]
   k: BACK SPACE
 - p: [14, 15]
   k: {t: Ctl+ C, h: '5'}
 - p: [15, 16]
   k: {t: Ctl+ V, h: '4'}
-- p: [28, 27]
+- p: [28, 16]
   k: DEL
 - p: [26, 27]
   k: Ctl+ F4
@@ -289,7 +289,7 @@ combos:
   k: '&value'
 - p: [40, 9]
   k: '&statement'
-- p: [19, 31]
+- p: [31, 32]
   k: ENTER
 - p: [38, 39]
   k: CAPS WORD
