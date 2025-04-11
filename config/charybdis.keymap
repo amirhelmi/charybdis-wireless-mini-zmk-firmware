@@ -1,10 +1,11 @@
+#include <dt-bindings/zmk/mouse.h>
+#include <behaviors/mouse_keys.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
-#include <dt-bindings/zmk/outputs.h>
-#include <behaviors/mouse_keys.dtsi>
-#include <dt-bindings/zmk/ext_power.h>
+#include <dt-bindings/zmk/pointing.h>
+
+&sk { quick-release; };
 
 / {
     /* input config for mouse move mode */
@@ -75,7 +76,7 @@
 
         exclai {
             bindings = <&mt AT EXCLAMATION>;
-            key-positions = <6 18>;
+            key-positions = <7 19>;
         };
 
         enterl {
@@ -283,6 +284,11 @@
             bindings = <&kp GRAVE>;
             key-positions = <32 19>;
         };
+
+        question {
+            bindings = <&kp QUESTION>;
+            key-positions = <6 18>;
+        };
     };
 
     macros {
@@ -414,9 +420,9 @@
 
         BASE {
             bindings = <
-&none  &kp W  &kp L  &kp Y      &kp P        &kp B        &kp Z           &kp F        &kp O        &kp U       &kp SQT              &none
+&none  &kp Q  &kp L  &kp Y      &kp P        &kp B        &kp Z           &kp F        &kp O        &kp U       &mt BACKSLASH SLASH  &none
 &none  &kp C  &kp R  &lt 2 S    &kp T        &kp G        &kp M           &kp N        &kp E        &kp I       &kp A                &none
-&none  &kp Q  &kp J  &lt 2 V    &kp D        &kp K        &kp X           &kp H        &lt 2 COMMA  &kp PERIOD  &mt BACKSLASH SLASH  &none
+&none  &kp W  &kp J  &lt 2 V    &kp D        &kp K        &kp X           &kp H        &lt 2 COMMA  &kp PERIOD  &kp SINGLE_QUOTE     &none
                      &mkp LCLK  &lt 3 SPACE  &lt 1 TAB    &sk LEFT_SHIFT  &key_repeat
             >;
         };
