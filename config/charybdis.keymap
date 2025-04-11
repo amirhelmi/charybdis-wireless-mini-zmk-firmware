@@ -242,8 +242,8 @@
             key-positions = <29 28>;
         };
 
-        leftclick {
-            bindings = <&leftclick>;
+        rightclick {
+            bindings = <&rightclick>;
             key-positions = <32 33>;
         };
 
