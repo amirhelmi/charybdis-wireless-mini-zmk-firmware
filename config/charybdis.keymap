@@ -1,10 +1,9 @@
+#include <dt-bindings/zmk/mouse.h>
+#include <behaviors/mouse_keys.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
-#include <dt-bindings/zmk/outputs.h>
-#include <behaviors/mouse_keys.dtsi>
-#include <dt-bindings/zmk/ext_power.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     td_cursor: td_scroll_or_cursor {
@@ -88,7 +87,7 @@
 
         enterl {
             bindings = <&kp ENTER>;
-            key-positions = <37 38>;
+            key-positions = <28 16>;
         };
 
         lparenth {
@@ -168,7 +167,7 @@
 
         enterr {
             bindings = <&kp ENTER>;
-            key-positions = <39 40>;
+            key-positions = <19 31>;
         };
 
         capword {
@@ -203,7 +202,7 @@
 
         redo {
             bindings = <&kp LC(Y)>;
-            key-positions = <2 3>;
+            key-positions = <2 3 4>;
         };
 
         undo {
@@ -258,7 +257,7 @@
         };
 
         window {
-            bindings = <&kp LEFT_GUI>;
+            bindings = <&sk LEFT_GUI>;
             key-positions = <26 27 28>;
         };
 
@@ -285,6 +284,21 @@
         scroll {
             bindings = <&td_cursor>;
             key-positions = <36 37>;
+        };
+
+        types {
+            bindings = <&kp LA(N0)>;
+            key-positions = <3 2>;
+        };
+
+        showdesktop {
+            bindings = <&kp LG(D)>;
+            key-positions = <20 32>;
+        };
+
+        printscreen {
+            bindings = <&kp LG(LS(S))>;
+            key-positions = <21 33>;
         };
     };
 
