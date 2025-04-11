@@ -2,7 +2,7 @@ layout: {zmk_keyboard: charybdis}
 layers:
   BASE:
   - ''
-  - W
+  - Q
   - L
   - Y
   - P
@@ -11,7 +11,7 @@ layers:
   - F
   - O
   - U
-  - ''''
+  - {t: /, h: \}
   - ''
   - ''
   - C
@@ -26,7 +26,7 @@ layers:
   - A
   - ''
   - ''
-  - Q
+  - W
   - J
   - {t: V, h: NAV}
   - D
@@ -35,7 +35,7 @@ layers:
   - H
   - {t: ',', h: NAV}
   - .
-  - {t: /, h: \}
+  - ''''
   - ''
   - L CLK
   - {t: SPACE, h: switch}
@@ -255,7 +255,7 @@ layers:
 combos:
 - p: [40, 21]
   k: {t: ), h: ']'}
-- p: [6, 18]
+- p: [7, 19]
   k: {t: '!', h: '@'}
 - p: [28, 27]
   k: ENTER
@@ -339,3 +339,5 @@ combos:
   k: Gui+Sft+ S
 - p: [32, 19]
   k: '`'
+- p: [6, 18]
+  k: '?'
