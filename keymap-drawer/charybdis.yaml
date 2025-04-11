@@ -257,7 +257,7 @@ combos:
   k: {t: ), h: ']'}
 - p: [6, 18]
   k: {t: '!', h: '@'}
-- p: [37, 38]
+- p: [28, 16]
   k: ENTER
 - p: [37, 14]
   k: {t: (, h: '['}
@@ -289,7 +289,7 @@ combos:
   k: '&value'
 - p: [40, 9]
   k: '&statement'
-- p: [39, 40]
+- p: [19, 31]
   k: ENTER
 - p: [38, 39]
   k: CAPS WORD
@@ -303,7 +303,7 @@ combos:
   k: INSERT
 - p: [26, 15]
   k: ESCAPE
-- p: [2, 3]
+- p: [2, 3, 4]
   k: Ctl+ Y
 - p: [3, 4]
   k: Ctl+ Z
@@ -326,7 +326,7 @@ combos:
 - p: [33, 20]
   k: '@'
 - p: [26, 27, 28]
-  k: LEFT GUI
+  k: {t: LEFT GUI, h: sticky}
 - p: [31, 32, 33]
   k: Gui+ L
 - p: [4, 5]
@@ -337,3 +337,9 @@ combos:
   k: {t: BT, h: '1'}
 - p: [36, 37]
   k: SCRL SLOW
+- p: [3, 2]
+  k: Alt+ 0
+- p: [20, 32]
+  k: Gui+ D
+- p: [21, 33]
+  k: Gui+Sft+ S
