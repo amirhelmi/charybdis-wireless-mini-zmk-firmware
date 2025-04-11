@@ -28,14 +28,14 @@ layers:
   - ''
   - Q
   - J
-  - V
+  - {t: V, h: NAV}
   - D
   - K
   - X
   - H
-  - ','
+  - {t: ',', h: NAV}
   - .
-  - /
+  - {t: /, h: \}
   - ''
   - L CLK
   - {t: SPACE, h: switch}
@@ -44,16 +44,16 @@ layers:
   - '&key_repeat'
   num:
   - {t: ▽, type: trans}
+  - F9
+  - F5
+  - F11
+  - F3
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - DEV TOOLS
+  - F10
+  - F4
+  - F8
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '9'
@@ -61,7 +61,7 @@ layers:
   - {t: '1', h: NAV}
   - '3'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - F2
   - '2'
   - '0'
   - '4'
@@ -73,7 +73,7 @@ layers:
   - {t: ▽, type: trans}
   - '7'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - F6
   - '6'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -114,8 +114,8 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
+  - BOOT LDR
+  - BOOT LDR
   - PAGE DOWN
   - ''
   - PG UP
@@ -303,7 +303,7 @@ combos:
   k: INSERT
 - p: [26, 15]
   k: ESCAPE
-- p: [2, 3, 4]
+- p: [2, 3]
   k: Ctl+ Y
 - p: [3, 4]
   k: Ctl+ Z
@@ -313,12 +313,8 @@ combos:
   k: Ctl+ E
 - p: [16, 37]
   k: Ctl+ S
-- p: [14, 15, 16]
-  k: Ctl+ X
 - p: [14, 2]
   k: {t: LEFT SHIFT, h: sticky}
-- p: [29, 28]
-  k: F6
 - p: [32, 33]
   k: R CLK
 - p: [32, 21]
@@ -335,11 +331,11 @@ combos:
   k: {t: BT, h: '0'}
 - p: [10, 22]
   k: {t: BT, h: '1'}
-- p: [36, 37]
-  k: SCRL SLOW
-- p: [3, 2]
-  k: Alt+ 0
+- p: [15, 27]
+  k: '&altzero'
 - p: [20, 32]
   k: Gui+ D
 - p: [21, 33]
   k: Gui+Sft+ S
+- p: [32, 19]
+  k: '`'
