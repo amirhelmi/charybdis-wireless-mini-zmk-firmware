@@ -183,8 +183,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -264,9 +264,9 @@ combos:
 - p: [7, 19]
   k: BACK SPACE
 - p: [14, 15]
-  k: Ctl+ C
+  k: {t: Ctl+ C, h: '4'}
 - p: [15, 16]
-  k: Ctl+ V
+  k: {t: Ctl+ V, h: '4'}
 - p: [28, 27]
   k: DEL
 - p: [26, 27]
@@ -290,7 +290,7 @@ combos:
 - p: [40, 9]
   k: '&statement'
 - p: [39, 40]
-  k: Alt+ ENTER
+  k: ENTER
 - p: [38, 39]
   k: CAPS WORD
 - p: [16, 4]
@@ -320,7 +320,7 @@ combos:
 - p: [29, 28]
   k: F6
 - p: [32, 33]
-  k: '&leftclick'
+  k: R CLK
 - p: [32, 21]
   k: '#'
 - p: [33, 20]
