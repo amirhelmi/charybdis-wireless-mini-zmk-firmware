@@ -1,11 +1,9 @@
-
+#include <dt-bindings/zmk/mouse.h>
+#include <behaviors/mouse_keys.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
-#include <dt-bindings/zmk/outputs.h>
-#include <behaviors/mouse_keys.dtsi>
-#include <dt-bindings/zmk/ext_power.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &sk { quick-release; };
 
@@ -111,8 +109,8 @@
             key-positions = <28 16>;
         };
 
-        closetab {
-            bindings = <&kp LC(F4)>;
+        scroll {
+            bindings = <&mkp RCLK>;
             key-positions = <26 27>;
         };
 
@@ -227,8 +225,8 @@
             key-positions = <14 2>;
         };
 
-        rightclick {
-            bindings = <&mkp RCLK>;
+        appmenu {
+            bindings = <&kp K_CONTEXT_MENU>;
             key-positions = <32 33>;
         };
 
@@ -245,16 +243,6 @@
         window {
             bindings = <&sk LEFT_GUI>;
             key-positions = <26 27 28>;
-        };
-
-        lock {
-            bindings = <&kp LG(L)>;
-            key-positions = <31 32 33>;
-        };
-
-        f5 {
-            bindings = <&kp F5>;
-            key-positions = <4 5>;
         };
 
         bluetoothone {
@@ -274,12 +262,12 @@
 
         showdesktop {
             bindings = <&kp LG(D)>;
-            key-positions = <20 32>;
+            key-positions = <18 30>;
         };
 
         printscreen {
             bindings = <&kp LG(LS(S))>;
-            key-positions = <21 33>;
+            key-positions = <22 34>;
         };
 
         grave {
@@ -290,6 +278,26 @@
         question {
             bindings = <&kp QUESTION>;
             key-positions = <6 18>;
+        };
+
+        back {
+            bindings = <&mkp MB4>;
+            key-positions = <20 32>;
+        };
+
+        forward {
+            bindings = <&mkp MB5>;
+            key-positions = <21 33>;
+        };
+
+        selectall {
+            bindings = <&kp LC(A)>;
+            key-positions = <14 26>;
+        };
+
+        closetab {
+            bindings = <&kp LC(F4)>;
+            key-positions = <29 17 29>;
         };
     };
 
@@ -442,7 +450,7 @@
             bindings = <
 &none   &none   &none        &none   &none             &none          &none        &none           &kp UP_ARROW  &none      &none    &none
 &trans  &trans  &mt LCTRL R  &trans  &mt LEFT_SHIFT T  &none          &kp HOME     &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp END  &none
-&none   &none   &none        &none   &none             &bootloader    &bootloader  &kp PAGE_DOWN   &none         &kp PG_UP  &none    &none
+&none   &none   &none        &none   &none             &bootloader    &bootloader  &kp PAGE_DOWN   &kp DOWN      &kp PG_UP  &none    &none
                              &none   &none             &trans         &trans       &trans
             >;
         };
