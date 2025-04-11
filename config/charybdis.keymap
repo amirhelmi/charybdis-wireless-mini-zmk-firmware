@@ -102,7 +102,7 @@
         };
 
         copy {
-            bindings = <&lt 4 LC(C)>;
+            bindings = <&lt 5 LC(C)>;
             key-positions = <14 15>;
         };
 

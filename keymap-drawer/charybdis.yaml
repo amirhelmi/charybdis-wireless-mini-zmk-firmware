@@ -183,9 +183,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -225,8 +225,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -264,7 +264,7 @@ combos:
 - p: [7, 19]
   k: BACK SPACE
 - p: [14, 15]
-  k: {t: Ctl+ C, h: '4'}
+  k: {t: Ctl+ C, h: '5'}
 - p: [15, 16]
   k: {t: Ctl+ V, h: '4'}
 - p: [28, 27]
