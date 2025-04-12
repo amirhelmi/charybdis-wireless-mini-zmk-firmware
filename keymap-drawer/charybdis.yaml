@@ -117,7 +117,7 @@ layers:
   - BOOT LDR
   - BOOT LDR
   - PAGE DOWN
-  - ''
+  - DOWN
   - PG UP
   - ''
   - ''
@@ -270,7 +270,7 @@ combos:
 - p: [28, 16]
   k: DEL
 - p: [26, 27]
-  k: Ctl+ F4
+  k: R CLK
 - p: [40, 22]
   k: ;
 - p: [18, 19, 17, 16]
@@ -316,28 +316,32 @@ combos:
 - p: [14, 2]
   k: {t: LEFT SHIFT, h: sticky}
 - p: [32, 33]
-  k: R CLK
+  k: CONTEXT MENU
 - p: [32, 21]
   k: '#'
 - p: [33, 20]
   k: '@'
 - p: [26, 27, 28]
   k: {t: LEFT GUI, h: sticky}
-- p: [31, 32, 33]
-  k: Gui+ L
-- p: [4, 5]
-  k: F5
 - p: [1, 13]
   k: {t: BT, h: '0'}
 - p: [10, 22]
   k: {t: BT, h: '1'}
 - p: [15, 27]
   k: '&altzero'
-- p: [20, 32]
+- p: [18, 30]
   k: Gui+ D
-- p: [21, 33]
+- p: [22, 34]
   k: Gui+Sft+ S
 - p: [32, 19]
   k: '`'
 - p: [6, 18]
   k: '?'
+- p: [20, 32]
+  k: BACK
+- p: [21, 33]
+  k: FWD
+- p: [14, 26]
+  k: Ctl+ A
+- p: [29, 17, 29]
+  k: Ctl+ F4
