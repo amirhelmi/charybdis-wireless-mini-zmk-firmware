@@ -1,10 +1,9 @@
+#include <dt-bindings/zmk/mouse.h>
+#include <behaviors/mouse_keys.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
-#include <dt-bindings/zmk/outputs.h>
-#include <behaviors/mouse_keys.dtsi>
-#include <dt-bindings/zmk/ext_power.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &sk { quick-release; };
 
@@ -74,6 +73,9 @@
             flavor = "tap-unless-interrupted";
             tapping-term-ms = <1000>;
             bindings = <&switchwin>, <&kp>;
+
+            require-prior-idle-ms = <200>;
+            hold-trigger-key-positions = <2 3 4 16 17 28 15 14 26 27>;
         };
 
         rclick_scroll: rclick_scroll {
@@ -309,6 +311,21 @@
         closetab {
             bindings = <&kp LC(F4)>;
             key-positions = <17 29>;
+        };
+
+        f6 {
+            bindings = <&kp F6>;
+            key-positions = <4 5>;
+        };
+
+        f3 {
+            bindings = <&kp F3>;
+            key-positions = <17 16>;
+        };
+
+        f2 {
+            bindings = <&kp F2>;
+            key-positions = <28 29>;
         };
     };
 
