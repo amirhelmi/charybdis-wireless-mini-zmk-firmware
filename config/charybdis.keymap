@@ -1,10 +1,9 @@
+#include <dt-bindings/zmk/mouse.h>
+#include <behaviors/mouse_keys.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
-#include <dt-bindings/zmk/outputs.h>
-#include <behaviors/mouse_keys.dtsi>
-#include <dt-bindings/zmk/ext_power.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &sk { quick-release; };
 
@@ -76,10 +75,10 @@
             bindings = <&switchwin>, <&kp>;
         };
 
-        rclick_shift: rclick_shift {
+        rclick_scroll: rclick_scroll {
             compatible = "zmk,behavior-hold-tap";
-            label = "RCLICK_SHIFT";
-            bindings = <&kp>, <&mkp>;
+            label = "RCLICK_SCROLL";
+            bindings = <&mo>, <&mkp>;
 
             #binding-cells = <2>;
             flavor = "balanced";
@@ -101,7 +100,7 @@
         };
 
         enterl {
-            bindings = <&kp ENTER>;
+            bindings = <&lt 4 ENTER>;
             key-positions = <28 27>;
         };
 
@@ -112,7 +111,7 @@
 
         backspaqe {
             bindings = <&kp BACKSPACE>;
-            key-positions = <31 20>;
+            key-positions = <31 19>;
         };
 
         copy {
@@ -131,7 +130,7 @@
         };
 
         rightclick {
-            bindings = <&rclick_shift LEFT_SHIFT RCLK>;
+            bindings = <&rclick_scroll 5 RCLK>;
             key-positions = <26 27>;
         };
 
