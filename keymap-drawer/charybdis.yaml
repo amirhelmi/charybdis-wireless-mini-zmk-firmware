@@ -39,7 +39,7 @@ layers:
   - ''
   - L CLK
   - {t: SPACE, h: switch}
-  - {t: TAB, h: num}
+  - {t: TAB, h: '&switchwin'}
   - {t: LEFT SHIFT, h: sticky}
   - '&key_repeat'
   num:
@@ -81,7 +81,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   NAV:
