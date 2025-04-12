@@ -184,20 +184,20 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -258,10 +258,10 @@ combos:
 - p: [7, 19]
   k: {t: '!', h: '@'}
 - p: [28, 27]
-  k: ENTER
+  k: {t: ENTER, h: '4'}
 - p: [37, 14]
   k: {t: (, h: '['}
-- p: [31, 20]
+- p: [31, 19]
   k: BACK SPACE
 - p: [14, 15]
   k: {t: Ctl+ C, h: '5'}
@@ -270,7 +270,7 @@ combos:
 - p: [16, 28]
   k: DEL
 - p: [26, 27]
-  k: {t: R CLK, h: LEFT SHIFT}
+  k: {t: R CLK, h: '5'}
 - p: [40, 22]
   k: ;
 - p: [18, 19, 17, 16]
