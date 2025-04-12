@@ -38,8 +38,8 @@ layers:
   - ''''
   - ''
   - L CLK
-  - {t: SPACE, h: switch}
-  - {t: TAB, h: '&switchwin'}
+  - {t: SPACE, h: '&switchwin'}
+  - {t: TAB, h: num}
   - {t: LEFT SHIFT, h: sticky}
   - '&key_repeat'
   num:
@@ -81,7 +81,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   NAV:
@@ -164,7 +164,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -261,16 +261,16 @@ combos:
   k: ENTER
 - p: [37, 14]
   k: {t: (, h: '['}
-- p: [31, 19]
+- p: [31, 20]
   k: BACK SPACE
 - p: [14, 15]
   k: {t: Ctl+ C, h: '5'}
 - p: [15, 16]
   k: {t: Ctl+ V, h: '4'}
-- p: [28, 16]
+- p: [16, 28]
   k: DEL
 - p: [26, 27]
-  k: R CLK
+  k: {t: R CLK, h: LEFT SHIFT}
 - p: [40, 22]
   k: ;
 - p: [18, 19, 17, 16]
@@ -279,7 +279,7 @@ combos:
   k: _
 - p: [31, 30]
   k: '-'
-- p: [15, 3]
+- p: [15, 27]
   k: {t: LEFT CONTROL, h: sticky}
 - p: [40, 19]
   k: ':'
@@ -293,7 +293,7 @@ combos:
   k: ENTER
 - p: [38, 39]
   k: CAPS WORD
-- p: [16, 4]
+- p: [4, 16]
   k: {t: LEFT ALT, h: sticky}
 - p: [5, 17]
   k: {t: +, h: '*'}
@@ -311,10 +311,8 @@ combos:
   k: {t: Ctl+ D, h: Ctl+ R}
 - p: [16, 3]
   k: Ctl+ E
-- p: [16, 37]
+- p: [3, 15]
   k: Ctl+ S
-- p: [14, 2]
-  k: {t: LEFT SHIFT, h: sticky}
 - p: [32, 33]
   k: CONTEXT MENU
 - p: [32, 21]
@@ -327,21 +325,19 @@ combos:
   k: {t: BT, h: '0'}
 - p: [10, 22]
   k: {t: BT, h: '1'}
-- p: [15, 27]
+- p: [2, 14]
   k: '&altzero'
 - p: [18, 30]
   k: Gui+ D
 - p: [22, 34]
   k: Gui+Sft+ S
-- p: [32, 19]
+- p: [19, 32]
   k: '`'
 - p: [6, 18]
   k: '?'
-- p: [20, 32]
+- p: [32, 20]
   k: BACK
 - p: [21, 33]
   k: FWD
-- p: [14, 26]
-  k: Ctl+ A
-- p: [29, 17, 29]
+- p: [17, 29]
   k: Ctl+ F4
