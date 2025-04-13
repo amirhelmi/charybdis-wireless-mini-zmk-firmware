@@ -306,13 +306,13 @@ combos:
 - p: [31, 19]
   k: BACK SPACE
 - p: [14, 15]
-  k: {t: Ctl+ C, h: scroll}
+  k: Ctl+ C
 - p: [15, 16]
-  k: {t: Ctl+ V, h: snipe}
+  k: Ctl+ V
 - p: [16, 28]
   k: DEL
 - p: [26, 27]
-  k: {t: R CLK, h: scroll}
+  k: {t: R CLK, h: LCTRL}
 - p: [40, 22]
   k: ;
 - p: [18, 19, 17, 16]
@@ -390,6 +390,4 @@ combos:
 - p: [31, 30]
   k: '&altleft'
 - p: [21, 33]
-  k: Ctl+ TAB
-- p: [20, 32]
-  k: Ctl+Sft+ TAB
+  k: \
