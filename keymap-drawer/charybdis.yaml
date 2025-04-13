@@ -15,9 +15,9 @@ layers:
   - ''
   - ''
   - C
-  - R
+  - {t: R, h: scroll}
   - {t: S, h: NAV}
-  - T
+  - {t: T, h: snipe}
   - G
   - M
   - N
@@ -28,12 +28,12 @@ layers:
   - ''
   - W
   - J
-  - {t: V, h: NAV}
+  - {t: V, h: bootloader}
   - D
   - K
   - X
   - H
-  - {t: ',', h: NAV}
+  - {t: ',', h: bootloader}
   - .
   - ''''
   - ''
@@ -72,7 +72,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '7'
-  - {t: ▽, type: trans}
+  - F7
   - F6
   - '6'
   - {t: ▽, type: trans}
@@ -103,22 +103,22 @@ layers:
   - {type: held}
   - {t: T, h: LEFT SHIFT}
   - ''
-  - HOME
+  - {t: HOME, h: Sft+ HOME}
   - LEFT
   - DOWN
   - RIGHT
-  - END
+  - {t: END, h: Sft+ END}
   - ''
   - ''
   - ''
   - ''
   - ''
   - ''
-  - BOOT LDR
-  - BOOT LDR
+  - ''
+  - ''
+  - PAGE UP
   - PAGE DOWN
-  - DOWN
-  - PG UP
+  - ''
   - ''
   - ''
   - ''
@@ -168,18 +168,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '4':
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  snipe:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -197,6 +186,45 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  scroll:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -210,7 +238,34 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '5':
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - BACK
+  - FWD
+  bootloader:
+  - {t: ▽, type: trans}
+  - BOOT LDR
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - BOOT LDR
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -226,19 +281,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -258,19 +300,19 @@ combos:
 - p: [7, 19]
   k: {t: '!', h: '@'}
 - p: [28, 27]
-  k: {t: ENTER, h: '4'}
+  k: {t: ENTER, h: snipe}
 - p: [37, 14]
   k: {t: (, h: '['}
 - p: [31, 19]
   k: BACK SPACE
 - p: [14, 15]
-  k: {t: Ctl+ C, h: '5'}
+  k: {t: Ctl+ C, h: scroll}
 - p: [15, 16]
-  k: {t: Ctl+ V, h: '4'}
+  k: {t: Ctl+ V, h: snipe}
 - p: [16, 28]
   k: DEL
 - p: [26, 27]
-  k: {t: R CLK, h: '5'}
+  k: {t: R CLK, h: scroll}
 - p: [40, 22]
   k: ;
 - p: [18, 19, 17, 16]
@@ -297,8 +339,6 @@ combos:
   k: {t: LEFT ALT, h: sticky}
 - p: [5, 17]
   k: {t: +, h: '*'}
-- p: [19, 21, 20]
-  k: Ctl+ BACK SPACE
 - p: [37, 13]
   k: INSERT
 - p: [26, 15]
@@ -331,14 +371,12 @@ combos:
   k: Gui+ D
 - p: [22, 34]
   k: Gui+Sft+ S
-- p: [19, 32]
+- p: [13, 25]
   k: '`'
 - p: [18, 30]
   k: '?'
 - p: [32, 20]
-  k: BACK
-- p: [21, 33]
-  k: FWD
+  k: '&ctrlback'
 - p: [17, 29]
   k: Ctl+ F4
 - p: [4, 5]
@@ -351,3 +389,7 @@ combos:
   k: '&althome'
 - p: [31, 30]
   k: '&altleft'
+- p: [21, 33]
+  k: Ctl+ TAB
+- p: [20, 32]
+  k: Ctl+Sft+ TAB
