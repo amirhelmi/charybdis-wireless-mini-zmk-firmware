@@ -1,8 +1,9 @@
+#include <dt-bindings/zmk/mouse.h>
+#include <behaviors/mouse_keys.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
-#include <behaviors/mouse_keys.dtsi>
+#include <dt-bindings/zmk/pointing.h>
 
 &sk { quick-release; };
 
@@ -77,10 +78,10 @@
             hold-trigger-key-positions = <2 3 4 16 17 28 15 14 26 27>;
         };
 
-        rclick_scroll: rclick_scroll {
+        rclick_ctrl: rclick_ctrl {
             compatible = "zmk,behavior-hold-tap";
-            label = "RCLICK_SCROLL";
-            bindings = <&mo>, <&mkp>;
+            label = "RCLICK_CTRL";
+            bindings = <&kp>, <&mkp>;
 
             #binding-cells = <2>;
             flavor = "balanced";
@@ -117,12 +118,12 @@
         };
 
         copy {
-            bindings = <&lt 5 LC(C)>;
+            bindings = <&kp LC(C)>;
             key-positions = <14 15>;
         };
 
         paste {
-            bindings = <&lt 4 LC(V)>;
+            bindings = <&kp LC(V)>;
             key-positions = <15 16>;
         };
 
@@ -132,7 +133,7 @@
         };
 
         rightclick {
-            bindings = <&rclick_scroll 5 RCLK>;
+            bindings = <&rclick_ctrl LCTRL RCLK>;
             key-positions = <26 27>;
         };
 
@@ -327,14 +328,9 @@
             key-positions = <31 30>;
         };
 
-        ctrltab {
-            bindings = <&kp LC(TAB)>;
+        backslash {
+            bindings = <&kp BACKSLASH>;
             key-positions = <21 33>;
-        };
-
-        ctrlshifttab {
-            bindings = <&kp LC(LS(TAB))>;
-            key-positions = <20 32>;
         };
     };
 
@@ -378,13 +374,6 @@
             #binding-cells = <0>;
             bindings = <&kp LS(S) &kp R &kp U &kp T &kp H &kp L &kp E &kp S &kp D &kp O &kp P &kp A &kp M &kp I &kp N &kp E &kp S &kp T &kp A &kp T &kp E &kp DLLR &kp PRCNT &kp CARET &kp PLUS>;
             label = "SLOGAN";
-        };
-
-        save: save {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&sk LEFT_ALT &kp A &sk LCTRL &kp S>;
-            label = "SAVE";
         };
 
         repand: repand {
@@ -450,13 +439,6 @@
             label = "ALTLEFT";
         };
 
-        leftclick: leftclick {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp KP_DIVIDE &kp KP_N5>;
-            label = "LEFTCLICK";
-        };
-
         repbor: repbor {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -467,7 +449,7 @@
         ctrlback: ctrlback {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp BACKSPACE>;
+            bindings = <&sk LCTRL &kp BACKSPACE>;
             label = "CTRLBACK";
         };
     };
