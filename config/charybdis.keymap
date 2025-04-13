@@ -1,11 +1,9 @@
-
+#include <dt-bindings/zmk/mouse.h>
+#include <behaviors/mouse_keys.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
-#include <dt-bindings/zmk/outputs.h>
-#include <behaviors/mouse_keys.dtsi>
-#include <dt-bindings/zmk/ext_power.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &sk { quick-release; };
 
@@ -204,11 +202,6 @@
             key-positions = <5 17>;
         };
 
-        lbackspace {
-            bindings = <&kp LC(BACKSPACE)>;
-            key-positions = <19 21 20>;
-        };
-
         insert {
             bindings = <&kp INSERT>;
             key-positions = <37 13>;
@@ -292,7 +285,7 @@
 
         grave {
             bindings = <&kp GRAVE>;
-            key-positions = <19 32>;
+            key-positions = <13 25>;
         };
 
         question {
@@ -300,14 +293,9 @@
             key-positions = <18 30>;
         };
 
-        back {
-            bindings = <&mkp MB4>;
+        ctrlbackspace {
+            bindings = <&ctrlback>;
             key-positions = <32 20>;
-        };
-
-        forward {
-            bindings = <&mkp MB5>;
-            key-positions = <21 33>;
         };
 
         closetab {
@@ -338,6 +326,16 @@
         altleft {
             bindings = <&altleft>;
             key-positions = <31 30>;
+        };
+
+        ctrltab {
+            bindings = <&kp LC(TAB)>;
+            key-positions = <21 33>;
+        };
+
+        ctrlshifttab {
+            bindings = <&kp LC(LS(TAB))>;
+            key-positions = <20 32>;
         };
     };
 
@@ -466,6 +464,13 @@
             bindings = <&kp LS(C) &kp N4 &kp LS(G) &kp LS(K) &kp P &kp LS(T) &kp LS(H) &kp LS(S) &kp LS(I) &kp N &kp L &kp M &kp LS(I) &kp N9 &kp LS(Z) &kp U &kp N &kp N4 &kp LS(A) &kp LS(J) &kp E &kp LS(M) &kp J &kp LS(V) &kp LS(M) &kp N2 &kp N4 &kp N5 &kp N6 &kp N3 &kp N2 &kp D &kp LS(F) &kp LS(Y) &kp LS(I) &kp LS(N) &kp N0 &kp LS(X) &kp B &kp S &kp LS(Y) &kp E &kp J &kp C &kp I &kp N5 &kp N9 &kp F &kp LS(Z) &kp LS(T) &kp U &kp N0 &kp LS(J) &kp LS(Q) &kp LS(Q) &kp LS(J) &kp N9 &kp N9 &kp LS(B) &kp LS(D) &kp LS(A) &kp LS(C) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(I) &kp LS(A) &kp LS(Y) &kp N &kp LS(K) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(S) &kp LS(A) &kp LS(Z) &kp LS(D) &kp LS(O) &kp N2 &kp L &kp D &kp LS(M)>;
             label = "REPBOR";
         };
+
+        ctrlback: ctrlback {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp BACKSPACE>;
+            label = "CTRLBACK";
+        };
     };
 
     // ╭──────┬──────┬──────┬──────┬──────┬──────╮  ╭──────┬──────┬──────┬──────┬──────┬──────╮
@@ -483,10 +488,10 @@
 
         BASE {
             bindings = <
-&none  &kp Q  &kp L  &kp Y      &kp P             &kp B        &kp Z           &kp F        &kp O        &kp U       &mt BACKSLASH SLASH  &none
-&none  &kp C  &kp R  &lt 2 S    &kp T             &kp G        &kp M           &kp N        &kp E        &kp I       &kp A                &none
-&none  &kp W  &kp J  &lt 2 V    &kp D             &kp K        &kp X           &kp H        &lt 2 COMMA  &kp PERIOD  &kp SINGLE_QUOTE     &none
-                     &mkp LCLK  &gui_tap 0 SPACE  &lt 1 TAB    &sk LEFT_SHIFT  &key_repeat
+&none  &kp Q  &kp L    &kp Y      &kp P             &kp B        &kp Z           &kp F        &kp O        &kp U       &mt BACKSLASH SLASH  &none
+&none  &kp C  &lt 5 R  &lt 2 S    &lt 4 T           &kp G        &kp M           &kp N        &kp E        &kp I       &kp A                &none
+&none  &kp W  &kp J    &lt 6 V    &kp D             &kp K        &kp X           &kp H        &lt 6 COMMA  &kp PERIOD  &kp SINGLE_QUOTE     &none
+                       &mkp LCLK  &gui_tap 0 SPACE  &lt 1 TAB    &sk LEFT_SHIFT  &key_repeat
             >;
         };
 
@@ -494,17 +499,17 @@
             bindings = <
 &trans  &kp F9  &kp F5  &kp F11         &kp F3        &trans    &trans  &kp F12       &kp F10  &kp F4        &kp F8  &trans
 &trans  &kp N9  &kp N5  &lt 2 NUMBER_1  &kp NUMBER_3  &trans    &kp F2  &kp NUMBER_2  &kp N0   &kp NUMBER_4  &kp N8  &trans
-&trans  &trans  &trans  &trans          &kp N7        &trans    &kp F6  &kp NUMBER_6  &trans   &trans        &trans  &trans
+&trans  &trans  &trans  &trans          &kp N7        &kp F7    &kp F6  &kp NUMBER_6  &trans   &trans        &trans  &trans
                         &trans          &trans        &trans    &trans  &trans
             >;
         };
 
         NAV {
             bindings = <
-&none   &none   &none        &none   &none             &none          &none        &none           &kp UP_ARROW  &none      &none    &none
-&trans  &trans  &mt LCTRL R  &trans  &mt LEFT_SHIFT T  &none          &kp HOME     &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp END  &none
-&none   &none   &none        &none   &none             &bootloader    &bootloader  &kp PAGE_DOWN   &kp DOWN      &kp PG_UP  &none    &none
-                             &none   &none             &trans         &trans       &trans
+&none   &none   &none        &none   &none             &none     &none     &none           &kp UP_ARROW   &none      &none    &none
+&trans  &trans  &mt LCTRL R  &trans  &mt LEFT_SHIFT T  &none     &kp HOME  &kp LEFT_ARROW  &kp DOWN       &kp RIGHT  &kp END  &none
+&none   &none   &none        &none   &none             &none     &none     &kp PAGE_UP     &kp PAGE_DOWN  &none      &none    &none
+                             &none   &none             &trans    &trans    &trans
             >;
         };
 
@@ -517,7 +522,7 @@
             >;
         };
 
-        layer_4 {
+        snipe {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
@@ -526,12 +531,21 @@
             >;
         };
 
-        layer_5 {
+        scroll {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &mkp MB4  &mkp MB5
+            >;
+        };
+
+        bootloader {
+            bindings = <
+&trans  &bootloader  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &bootloader  &trans
+&trans  &trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans       &trans
+&trans  &trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans       &trans
+                             &trans  &trans  &trans    &trans  &trans
             >;
         };
     };
