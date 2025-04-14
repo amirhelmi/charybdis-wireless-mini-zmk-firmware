@@ -335,7 +335,7 @@ combos:
   k: ENTER
 - p: [38, 39]
   k: CAPS WORD
-- p: [4, 16]
+- p: [14, 26]
   k: {t: LEFT ALT, h: sticky}
 - p: [5, 17]
   k: {t: +, h: '*'}
