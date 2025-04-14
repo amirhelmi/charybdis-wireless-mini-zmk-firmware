@@ -69,13 +69,13 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&repand'
+  - '&slogan'
   - '7'
   - F7
   - F6
   - '6'
-  - {t: ▽, type: trans}
+  - '&repbor'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -133,7 +133,7 @@ layers:
   - Gui+ 8
   - Gui+ 9
   - {t: ▽, type: trans}
-  - '&repbor'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -145,7 +145,7 @@ layers:
   - Gui+ 5
   - Gui+ 6
   - Gui+ 0
-  - '&slogan'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -157,7 +157,7 @@ layers:
   - Gui+ 2
   - Gui+ 3
   - {t: ▽, type: trans}
-  - '&repand'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
