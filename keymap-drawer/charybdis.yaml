@@ -41,7 +41,7 @@ layers:
   - {t: SPACE, h: '&switchwin'}
   - {t: TAB, h: num}
   - {t: LEFT SHIFT, h: sticky}
-  - '&key_repeat'
+  - {t: '&key_repeat', h: num}
   num:
   - {t: ▽, type: trans}
   - F9
@@ -300,7 +300,7 @@ combos:
 - p: [7, 19]
   k: {t: '!', h: '@'}
 - p: [28, 27]
-  k: {t: ENTER, h: snipe}
+  k: {t: ENTER, h: LEFT SHIFT}
 - p: [37, 14]
   k: {t: (, h: '['}
 - p: [31, 19]
@@ -351,7 +351,7 @@ combos:
   k: {t: Ctl+ D, h: Ctl+ R}
 - p: [16, 3]
   k: Ctl+ E
-- p: [3, 15]
+- p: [14, 26]
   k: Ctl+ S
 - p: [32, 33]
   k: CONTEXT MENU
@@ -391,3 +391,5 @@ combos:
   k: '&altleft'
 - p: [21, 33]
   k: \
+- p: [3, 15]
+  k: Ctl+ A
