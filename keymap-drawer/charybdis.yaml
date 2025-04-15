@@ -27,7 +27,7 @@ layers:
   - ''
   - ''
   - W
-  - {t: J, h: Ctl+ J}
+  - {t: J, h: LCTRL}
   - {t: V, h: bootloader}
   - D
   - K
