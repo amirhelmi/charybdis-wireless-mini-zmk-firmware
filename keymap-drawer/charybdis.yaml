@@ -15,9 +15,9 @@ layers:
   - ''
   - ''
   - C
-  - {t: R, h: scroll}
+  - {t: R, h: snipe}
   - {t: S, h: NAV}
-  - {t: T, h: snipe}
+  - {t: T, h: scroll}
   - G
   - M
   - N
@@ -27,7 +27,7 @@ layers:
   - ''
   - ''
   - W
-  - J
+  - {t: J, h: Ctl+ J}
   - {t: V, h: bootloader}
   - D
   - K
@@ -38,10 +38,10 @@ layers:
   - ''''
   - ''
   - L CLK
-  - {t: SPACE, h: '&switchwin'}
+  - {t: SPACE, h: num}
   - {t: TAB, h: num}
   - {t: LEFT SHIFT, h: sticky}
-  - {t: '&key_repeat', h: num}
+  - {t: '&key_repeat', h: '&switchwin'}
   num:
   - {t: ▽, type: trans}
   - F9
@@ -69,19 +69,19 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&repand'
-  - '&slogan'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '7'
   - F7
   - F6
   - '6'
-  - '&repbor'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   NAV:
@@ -183,9 +183,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -225,9 +225,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -386,10 +386,16 @@ combos:
 - p: [28, 29]
   k: F2
 - p: [6, 7]
-  k: '&althome'
+  k: {t: '&altleft', h: '&althome'}
 - p: [31, 30]
-  k: '&altleft'
+  k: '"'
 - p: [21, 33]
   k: \
 - p: [3, 15]
   k: Ctl+ A
+- p: [20, 19, 31, 32]
+  k: '&repbor'
+- p: [16, 28, 27, 15]
+  k: '&slogan'
+- p: [15, 14, 26, 27]
+  k: '&repand'
