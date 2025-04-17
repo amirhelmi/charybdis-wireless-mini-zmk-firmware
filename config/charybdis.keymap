@@ -116,6 +116,17 @@
             tapping-term-ms = <200>;
             require-prior-idle-ms = <180>;
         };
+
+        altup_down: altup_down {
+            compatible = "zmk,behavior-hold-tap";
+            label = "ALTUP_DOWN";
+            bindings = <&altup>, <&altdown>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            require-prior-idle-ms = <180>;
+            flavor = "balanced";
+        };
     };
 
     combos {
@@ -383,7 +394,7 @@
         };
 
         altup_down {
-            bindings = <&mt LA(UP_ARROW) LA(DOWN)>;
+            bindings = <&altup_down 0 0>;
             key-positions = <4 16 16>;
         };
     };

@@ -400,4 +400,4 @@ combos:
 - p: [14, 15, 16]
   k: Ctl+ X
 - p: [4, 16, 16]
-  k: {t: Alt+ DOWN, h: Alt+ UP ARROW}
+  k: {t: '&altdown', h: '&altup'}
