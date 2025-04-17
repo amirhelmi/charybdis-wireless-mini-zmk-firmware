@@ -399,5 +399,5 @@ combos:
   k: '&repand'
 - p: [14, 15, 16]
   k: Ctl+ X
-- p: [4, 16, 16]
+- p: [4, 16]
   k: {t: '&altdown', h: '&altup'}

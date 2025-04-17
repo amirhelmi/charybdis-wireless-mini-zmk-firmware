@@ -395,7 +395,7 @@
 
         altup_down {
             bindings = <&altup_down 0 0>;
-            key-positions = <4 16 16>;
+            key-positions = <4 16>;
         };
     };
 
