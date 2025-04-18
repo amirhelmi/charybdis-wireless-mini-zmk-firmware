@@ -159,22 +159,17 @@
 
         copy {
             bindings = <&kp LC(C)>;
-            key-positions = <14 15>;
+            key-positions = <14 15 37>;
         };
 
         paste {
             bindings = <&kp LC(V)>;
-            key-positions = <15 16>;
+            key-positions = <15 16 37>;
         };
 
         dele {
             bindings = <&kp DEL>;
             key-positions = <16 28>;
-        };
-
-        rightclick {
-            bindings = <&rclick_ctrl LCTRL RCLK>;
-            key-positions = <26 27>;
         };
 
         semicolon {
@@ -234,7 +229,7 @@
 
         stickyalt {
             bindings = <&sk LEFT_ALT>;
-            key-positions = <14 26>;
+            key-positions = <14 15>;
         };
 
         plus {
@@ -396,6 +391,16 @@
         altup_down {
             bindings = <&altup_down 0 0>;
             key-positions = <4 16>;
+        };
+
+        leftclick {
+            bindings = <&mkp LCLK>;
+            key-positions = <15 16>;
+        };
+
+        rightclick {
+            bindings = <&mkp RCLK>;
+            key-positions = <26 27>;
         };
     };
 
