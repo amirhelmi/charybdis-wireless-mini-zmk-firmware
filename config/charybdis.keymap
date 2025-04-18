@@ -159,12 +159,12 @@
 
         copy {
             bindings = <&kp LC(C)>;
-            key-positions = <14 15 37>;
+            key-positions = <15 37>;
         };
 
         paste {
             bindings = <&kp LC(V)>;
-            key-positions = <15 16 37>;
+            key-positions = <16 37>;
         };
 
         dele {
