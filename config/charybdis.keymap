@@ -305,7 +305,7 @@
 
         showdesktop {
             bindings = <&kp LG(D)>;
-            key-positions = <18 30>;
+            key-positions = <30 31>;
         };
 
         printscreen {
@@ -355,7 +355,7 @@
 
         doublequote {
             bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <31 30>;
+            key-positions = <30 18>;
         };
 
         backslash {
