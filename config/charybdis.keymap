@@ -305,12 +305,12 @@
 
         showdesktop {
             bindings = <&kp LG(D)>;
-            key-positions = <18 6>;
+            key-positions = <18 18 30>;
         };
 
         printscreen {
             bindings = <&kp LG(LS(S))>;
-            key-positions = <18 30>;
+            key-positions = <18 6>;
         };
 
         grave {
@@ -320,7 +320,7 @@
 
         question {
             bindings = <&kp QUESTION>;
-            key-positions = <22 34>;
+            key-positions = <33 21>;
         };
 
         ctrlbackspace {
@@ -360,7 +360,7 @@
 
         backslash {
             bindings = <&kp BACKSLASH>;
-            key-positions = <21 33>;
+            key-positions = <22 34>;
         };
 
         selectall {
