@@ -305,7 +305,7 @@
 
         showdesktop {
             bindings = <&kp LG(D)>;
-            key-positions = <18 18 30>;
+            key-positions = <18 30>;
         };
 
         printscreen {
