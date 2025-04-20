@@ -310,7 +310,7 @@
 
         printscreen {
             bindings = <&kp LG(LS(S))>;
-            key-positions = <22 34>;
+            key-positions = <18 30>;
         };
 
         grave {
@@ -320,7 +320,7 @@
 
         question {
             bindings = <&kp QUESTION>;
-            key-positions = <18 30>;
+            key-positions = <22 34>;
         };
 
         ctrlbackspace {
