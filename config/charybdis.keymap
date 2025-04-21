@@ -7,7 +7,7 @@
 
 &sk { quick-release; };
 
-&lt { require-prior-idle-ms = <160>; };
+&lt { require-prior-idle-ms = <190>; };
 
 &mt {
     flavor = "balanced";
@@ -229,7 +229,7 @@
 
         stickyalt {
             bindings = <&sk LEFT_ALT>;
-            key-positions = <14 15>;
+            key-positions = <14 26>;
         };
 
         plus {
@@ -365,7 +365,7 @@
 
         selectall {
             bindings = <&kp LC(A)>;
-            key-positions = <14 16 13 15>;
+            key-positions = <31 32 33>;
         };
 
         repob {
@@ -391,11 +391,6 @@
         altup_down {
             bindings = <&altup_down 0 0>;
             key-positions = <4 16>;
-        };
-
-        leftclick {
-            bindings = <&mkp LCLK>;
-            key-positions = <16 14>;
         };
 
         rightclick {

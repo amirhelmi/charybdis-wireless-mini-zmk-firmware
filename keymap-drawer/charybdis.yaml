@@ -333,7 +333,7 @@ combos:
   k: ENTER
 - p: [38, 39]
   k: CAPS WORD
-- p: [14, 15]
+- p: [14, 26]
   k: {t: LEFT ALT, h: sticky}
 - p: [5, 17]
   k: {t: +, h: '*'}
@@ -387,7 +387,7 @@ combos:
   k: '"'
 - p: [22, 34]
   k: \
-- p: [14, 16, 13, 15]
+- p: [31, 32, 33]
   k: Ctl+ A
 - p: [20, 19, 31, 32]
   k: '&repbor'
@@ -399,7 +399,5 @@ combos:
   k: Ctl+ X
 - p: [4, 16]
   k: {t: '&altdown', h: '&altup'}
-- p: [16, 14]
-  k: L CLK
 - p: [26, 27]
   k: R CLK
