@@ -12,6 +12,7 @@
 &mt {
     flavor = "balanced";
     require-prior-idle-ms = <160>;
+    hold-trigger-key-positions = <36>;
 };
 
 / {
@@ -126,6 +127,18 @@
             tapping-term-ms = <200>;
             require-prior-idle-ms = <180>;
             flavor = "balanced";
+        };
+
+        navigation_s: navigation_s {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NAVIGATION_S";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <19 20 21 8 18 22 31 32>;
+            require-prior-idle-ms = <170>;
         };
     };
 
@@ -534,10 +547,10 @@
 
         BASE {
             bindings = <
-&none  &mt LC(Q) Q  &kp L        &kp Y      &kp P             &kp B        &kp Z           &kp F               &kp O        &kp U       &mt LC(SLASH) SLASH  &none
-&none  &kp C        &mt LCTRL R  &lt 2 S    &mt LEFT_SHIFT T  &kp G        &kp M           &kp N               &kp E        &kp I       &kp A                &none
-&none  &kp W        &mt LC(J) J  &lt 4 V    &kp D             &kp K        &kp X           &kp H               &lt 5 COMMA  &kp PERIOD  &kp SINGLE_QUOTE     &none
-                                 &mkp LCLK  &lt 1 SPACE       &lt 1 TAB    &sk LEFT_SHIFT  &switch_repeat 0 0
+&none  &mt LC(Q) Q  &kp L        &kp Y              &kp P             &kp B        &kp Z           &kp F               &kp O        &kp U       &mt LC(SLASH) SLASH  &none
+&none  &kp C        &mt LCTRL R  &navigation_s 2 S  &mt LEFT_SHIFT T  &kp G        &kp M           &kp N               &kp E        &kp I       &kp A                &none
+&none  &kp W        &mt LC(J) J  &lt 4 V            &kp D             &kp K        &kp X           &kp H               &lt 5 COMMA  &kp PERIOD  &kp SINGLE_QUOTE     &none
+                                 &mkp LCLK          &lt 1 SPACE       &lt 1 TAB    &sk LEFT_SHIFT  &switch_repeat 0 0
             >;
         };
 
