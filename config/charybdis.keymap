@@ -410,6 +410,11 @@
             bindings = <&mkp RCLK>;
             key-positions = <26 27>;
         };
+
+        togglescroll {
+            bindings = <&tog 5>;
+            key-positions = <13 16>;
+        };
     };
 
     macros {
