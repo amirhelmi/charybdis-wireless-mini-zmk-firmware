@@ -87,16 +87,6 @@
             label = "SWITCH_REPEAT";
         };
 
-        rclick_ctrl: rclick_ctrl {
-            compatible = "zmk,behavior-hold-tap";
-            label = "RCLICK_CTRL";
-            bindings = <&kp>, <&mkp>;
-
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <200>;
-        };
-
         back_home: back_home {
             compatible = "zmk,behavior-hold-tap";
             label = "BACK_HOME";
@@ -128,18 +118,6 @@
             require-prior-idle-ms = <180>;
             flavor = "balanced";
         };
-
-        navigation_s: navigation_s {
-            compatible = "zmk,behavior-hold-tap";
-            label = "NAVIGATION_S";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <180>;
-            flavor = "tap-preferred";
-            hold-trigger-key-positions = <19 20 21 8 18 22 31 32>;
-            require-prior-idle-ms = <170>;
-        };
     };
 
     combos {
@@ -153,11 +131,6 @@
         exclai {
             bindings = <&mt AT EXCLAMATION>;
             key-positions = <7 19>;
-        };
-
-        enterl {
-            bindings = <&mt LEFT_SHIFT ENTER>;
-            key-positions = <28 27>;
         };
 
         lparenth {
@@ -182,7 +155,7 @@
 
         dele {
             bindings = <&kp DEL>;
-            key-positions = <16 28>;
+            key-positions = <28 27>;
         };
 
         semicolon {
@@ -205,8 +178,8 @@
             key-positions = <18 19>;
         };
 
-        stickyctrl {
-            bindings = <&sk LEFT_CONTROL>;
+        stickyalt {
+            bindings = <&sk LEFT_ALT>;
             key-positions = <15 27>;
         };
 
@@ -240,8 +213,8 @@
             key-positions = <38 39>;
         };
 
-        stickyalt {
-            bindings = <&sk LEFT_ALT>;
+        stickyctrl {
+            bindings = <&sk LEFT_CONTROL>;
             key-positions = <14 26>;
         };
 
@@ -412,8 +385,13 @@
         };
 
         togglescroll {
-            bindings = <&tog 5>;
+            bindings = <&tog 2>;
             key-positions = <13 16>;
+        };
+
+        stickyshift {
+            bindings = <&sk LEFT_SHIFT>;
+            key-positions = <16 28>;
         };
     };
 
@@ -552,10 +530,10 @@
 
         BASE {
             bindings = <
-&none  &mt LC(Q) Q  &kp L        &kp Y              &kp P             &kp B        &kp Z           &kp F               &kp O        &kp U       &mt LC(SLASH) SLASH  &none
-&none  &kp C        &mt LCTRL R  &navigation_s 2 S  &mt LEFT_SHIFT T  &kp G        &kp M           &kp N               &kp E        &kp I       &kp A                &none
-&none  &kp W        &mt LC(J) J  &lt 4 V            &kp D             &kp K        &kp X           &kp H               &lt 5 COMMA  &kp PERIOD  &kp SINGLE_QUOTE     &none
-                                 &mkp LCLK          &lt 1 SPACE       &lt 1 TAB    &sk LEFT_SHIFT  &switch_repeat 0 0
+&none  &mt LC(Q) Q  &kp L        &kp Y      &kp P             &kp B        &kp Z           &kp F               &kp O        &kp U       &mt LC(SLASH) SLASH  &none
+&none  &kp C        &mt LCTRL R  &kp S      &mt LEFT_SHIFT T  &kp G        &kp M           &kp N               &kp E        &kp I       &kp A                &none
+&none  &kp W        &mt LC(J) J  &lt 4 V    &kp D             &kp K        &kp X           &kp H               &lt 5 COMMA  &kp PERIOD  &kp SINGLE_QUOTE     &none
+                                 &mkp LCLK  &lt 1 SPACE       &lt 2 TAB    &sk LEFT_SHIFT  &switch_repeat 0 0
             >;
         };
 
@@ -570,10 +548,10 @@
 
         NAV {
             bindings = <
-&none   &none   &none        &none   &none             &none     &none              &none           &kp UP_ARROW   &none      &none            &none
-&trans  &trans  &mt LCTRL R  &trans  &mt LEFT_SHIFT T  &none     &mt LS(HOME) HOME  &kp LEFT_ARROW  &kp DOWN       &kp RIGHT  &mt LS(END) END  &none
-&none   &none   &none        &none   &none             &none     &none              &kp PAGE_UP     &kp PAGE_DOWN  &none      &none            &none
-                             &trans  &trans            &trans    &mkp MB4           &mkp MB5
+&none   &none   &none      &none   &none           &none     &none              &none           &kp UP_ARROW   &none      &none            &none
+&trans  &trans  &kp LCTRL  &trans  &kp LEFT_SHIFT  &none     &mt LS(HOME) HOME  &kp LEFT_ARROW  &kp DOWN       &kp RIGHT  &mt LS(END) END  &none
+&none   &none   &none      &none   &none           &none     &none              &kp PAGE_UP     &kp PAGE_DOWN  &none      &none            &none
+                           &trans  &trans          &trans    &mkp MB4           &mkp MB5
             >;
         };
 

@@ -16,7 +16,7 @@ layers:
   - ''
   - C
   - {t: R, h: LCTRL}
-  - {t: S, h: NAV}
+  - S
   - {t: T, h: LEFT SHIFT}
   - G
   - M
@@ -39,7 +39,7 @@ layers:
   - ''
   - L CLK
   - {t: SPACE, h: num}
-  - {t: TAB, h: num}
+  - {t: TAB, h: NAV}
   - {t: LEFT SHIFT, h: sticky}
   - {t: '&key_repeat', h: '&switchwin'}
   num:
@@ -99,9 +99,9 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: R, h: LCTRL}
-  - {type: held}
-  - {t: T, h: LEFT SHIFT}
+  - LCTRL
+  - {t: ▽, type: trans}
+  - LEFT SHIFT
   - ''
   - {t: HOME, h: Sft+ HOME}
   - LEFT
@@ -123,7 +123,7 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - BACK
   - FWD
   switch:
@@ -299,8 +299,6 @@ combos:
   k: {t: ), h: ']'}
 - p: [7, 19]
   k: {t: '!', h: '@'}
-- p: [28, 27]
-  k: {t: ENTER, h: LEFT SHIFT}
 - p: [37, 14]
   k: {t: (, h: '['}
 - p: [31, 19]
@@ -309,7 +307,7 @@ combos:
   k: {t: Ctl+ C, h: LEFT ALT}
 - p: [16, 15]
   k: Ctl+ V
-- p: [16, 28]
+- p: [28, 27]
   k: DEL
 - p: [40, 22]
   k: ;
@@ -320,7 +318,7 @@ combos:
 - p: [18, 19]
   k: '-'
 - p: [15, 27]
-  k: {t: LEFT CONTROL, h: sticky}
+  k: {t: LEFT ALT, h: sticky}
 - p: [40, 19]
   k: ':'
 - p: [40, 31]
@@ -334,7 +332,7 @@ combos:
 - p: [38, 39]
   k: CAPS WORD
 - p: [14, 26]
-  k: {t: LEFT ALT, h: sticky}
+  k: {t: LEFT CONTROL, h: sticky}
 - p: [5, 17]
   k: {t: +, h: '*'}
 - p: [37, 13]
@@ -402,4 +400,6 @@ combos:
 - p: [26, 27]
   k: R CLK
 - p: [13, 16]
-  k: {t: scroll, h: toggle}
+  k: {t: NAV, h: toggle}
+- p: [16, 28]
+  k: {t: LEFT SHIFT, h: sticky}
