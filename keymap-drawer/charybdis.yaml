@@ -125,7 +125,7 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - BACK
-  - FWD
+  - {t: ▽, type: trans}
   switch:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -299,7 +299,7 @@ combos:
   k: {t: ), h: ']'}
 - p: [7, 19]
   k: {t: '!', h: '@'}
-- p: [37, 14]
+- p: [37, 14, 1]
   k: {t: (, h: '['}
 - p: [31, 19]
   k: BACK SPACE
@@ -393,13 +393,15 @@ combos:
   k: '&slogan'
 - p: [15, 14, 26, 27]
   k: '&repand'
-- p: [14, 15, 16]
+- p: [16, 13]
   k: Ctl+ X
 - p: [4, 16]
   k: {t: '&altdown', h: '&altup'}
 - p: [26, 27]
   k: R CLK
-- p: [13, 16]
+- p: [16, 14, 15]
   k: {t: NAV, h: toggle}
 - p: [16, 28]
   k: {t: LEFT SHIFT, h: sticky}
+- p: [19, 20, 21]
+  k: {t: scroll, h: toggle}
