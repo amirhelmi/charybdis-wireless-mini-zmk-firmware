@@ -149,7 +149,7 @@
         };
 
         paste {
-            bindings = <&kp LC(V)>;
+            bindings = <&mt LCTRL LC(V)>;
             key-positions = <16 15>;
         };
 
@@ -535,10 +535,10 @@
 
         BASE {
             bindings = <
-&none  &mt LC(Q) Q  &kp L        &kp Y      &kp P             &kp B        &kp Z           &kp F               &kp O        &kp U       &mt LC(SLASH) SLASH  &none
-&none  &kp C        &mt LCTRL R  &kp S      &mt LEFT_SHIFT T  &kp G        &kp M           &kp N               &kp E        &kp I       &kp A                &none
-&none  &kp W        &mt LC(J) J  &lt 4 V    &kp D             &kp K        &kp X           &kp H               &lt 5 COMMA  &kp PERIOD  &kp SINGLE_QUOTE     &none
-                                 &mkp LCLK  &lt 1 SPACE       &lt 2 TAB    &sk LEFT_SHIFT  &switch_repeat 0 0
+&none  &mt LC(Q) Q  &kp L        &kp Y        &kp P             &kp B        &kp Z           &kp F               &kp O        &kp U       &mt LC(SLASH) SLASH  &none
+&none  &kp C        &kp S        &mt LCTRL S  &mt LEFT_SHIFT T  &kp G        &kp M           &kp N               &kp E        &kp I       &kp A                &none
+&none  &kp W        &mt LC(J) J  &lt 4 V      &kp D             &kp K        &kp X           &kp H               &lt 5 COMMA  &kp PERIOD  &kp SINGLE_QUOTE     &none
+                                 &mkp LCLK    &lt 1 SPACE       &lt 2 TAB    &sk LEFT_SHIFT  &switch_repeat 0 0
             >;
         };
 
@@ -553,10 +553,10 @@
 
         NAV {
             bindings = <
-&none   &none   &none      &none   &none           &none     &none              &none           &kp UP_ARROW   &none      &none            &none
-&trans  &trans  &kp LCTRL  &trans  &kp LEFT_SHIFT  &none     &mt LS(HOME) HOME  &kp LEFT_ARROW  &kp DOWN       &kp RIGHT  &mt LS(END) END  &none
-&none   &none   &none      &none   &none           &none     &none              &kp PAGE_UP     &kp PAGE_DOWN  &none      &none            &none
-                           &trans  &trans          &trans    &mkp MB4           &trans
+&none   &none   &none   &none      &none           &none     &none              &none           &kp UP_ARROW   &none      &none            &none
+&trans  &trans  &trans  &kp LCTRL  &kp LEFT_SHIFT  &none     &mt LS(HOME) HOME  &kp LEFT_ARROW  &kp DOWN       &kp RIGHT  &mt LS(END) END  &none
+&none   &none   &none   &none      &none           &none     &none              &kp PAGE_UP     &kp PAGE_DOWN  &none      &none            &none
+                        &trans     &trans          &trans    &mkp MB4           &trans
             >;
         };
 

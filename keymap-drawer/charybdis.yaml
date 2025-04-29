@@ -15,8 +15,8 @@ layers:
   - ''
   - ''
   - C
-  - {t: R, h: LCTRL}
   - S
+  - {t: S, h: LCTRL}
   - {t: T, h: LEFT SHIFT}
   - G
   - M
@@ -99,8 +99,8 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LCTRL
   - {t: ▽, type: trans}
+  - LCTRL
   - LEFT SHIFT
   - ''
   - {t: HOME, h: Sft+ HOME}
@@ -306,7 +306,7 @@ combos:
 - p: [15, 14]
   k: {t: Ctl+ C, h: LEFT ALT}
 - p: [16, 15]
-  k: Ctl+ V
+  k: {t: Ctl+ V, h: LCTRL}
 - p: [28, 27]
   k: ENTER
 - p: [40, 22]
