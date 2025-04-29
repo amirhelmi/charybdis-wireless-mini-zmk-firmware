@@ -299,7 +299,7 @@ combos:
   k: {t: ), h: ']'}
 - p: [7, 19]
   k: {t: '!', h: '@'}
-- p: [37, 14, 1]
+- p: [37, 14]
   k: {t: (, h: '['}
 - p: [31, 19]
   k: BACK SPACE
@@ -308,7 +308,7 @@ combos:
 - p: [16, 15]
   k: Ctl+ V
 - p: [28, 27]
-  k: DEL
+  k: ENTER
 - p: [40, 22]
   k: ;
 - p: [18, 19, 17, 16]
@@ -317,7 +317,7 @@ combos:
   k: _
 - p: [18, 19]
   k: '-'
-- p: [15, 27]
+- p: [14, 26]
   k: {t: LEFT ALT, h: sticky}
 - p: [40, 19]
   k: ':'
@@ -331,7 +331,7 @@ combos:
   k: ENTER
 - p: [38, 39]
   k: CAPS WORD
-- p: [14, 26]
+- p: [15, 27]
   k: {t: LEFT CONTROL, h: sticky}
 - p: [5, 17]
   k: {t: +, h: '*'}
@@ -402,6 +402,6 @@ combos:
 - p: [16, 14, 15]
   k: {t: NAV, h: toggle}
 - p: [16, 28]
-  k: {t: LEFT SHIFT, h: sticky}
+  k: DELETE
 - p: [19, 20, 21]
   k: {t: scroll, h: toggle}

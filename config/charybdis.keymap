@@ -135,7 +135,7 @@
 
         lparenth {
             bindings = <&mt LEFT_BRACKET LEFT_PARENTHESIS>;
-            key-positions = <37 14 1>;
+            key-positions = <37 14>;
         };
 
         backspaqe {
@@ -153,8 +153,8 @@
             key-positions = <16 15>;
         };
 
-        dele {
-            bindings = <&kp DEL>;
+        enterleft {
+            bindings = <&kp ENTER>;
             key-positions = <28 27>;
         };
 
@@ -180,7 +180,7 @@
 
         stickyalt {
             bindings = <&sk LEFT_ALT>;
-            key-positions = <15 27>;
+            key-positions = <14 26>;
         };
 
         colonn {
@@ -215,7 +215,7 @@
 
         stickyctrl {
             bindings = <&sk LEFT_CONTROL>;
-            key-positions = <14 26>;
+            key-positions = <15 27>;
         };
 
         plus {
@@ -389,8 +389,8 @@
             key-positions = <16 14 15>;
         };
 
-        stickyshift {
-            bindings = <&sk LEFT_SHIFT>;
+        delete {
+            bindings = <&kp DELETE>;
             key-positions = <16 28>;
         };
 
