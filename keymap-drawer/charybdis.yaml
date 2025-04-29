@@ -15,7 +15,7 @@ layers:
   - ''
   - ''
   - C
-  - S
+  - R
   - {t: S, h: LCTRL}
   - {t: T, h: LEFT SHIFT}
   - G
