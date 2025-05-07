@@ -303,7 +303,7 @@ combos:
   k: {t: (, h: '['}
 - p: [31, 19]
   k: BACK SPACE
-- p: [14, 16]
+- p: [14, 15]
   k: Ctl+ C
 - p: [16, 15]
   k: {t: Ctl+ V, h: LCTRL}
@@ -317,7 +317,7 @@ combos:
   k: _
 - p: [18, 19]
   k: '-'
-- p: [14, 15]
+- p: [14, 16]
   k: {t: LEFT ALT, h: sticky}
 - p: [40, 19]
   k: ':'

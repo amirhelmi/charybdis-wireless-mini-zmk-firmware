@@ -145,7 +145,7 @@
 
         copy {
             bindings = <&kp LC(C)>;
-            key-positions = <14 16>;
+            key-positions = <14 15>;
         };
 
         paste {
@@ -180,7 +180,7 @@
 
         stickyalt {
             bindings = <&sk LEFT_ALT>;
-            key-positions = <14 15>;
+            key-positions = <14 16>;
         };
 
         colonn {
