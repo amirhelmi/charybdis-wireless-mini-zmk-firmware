@@ -4,7 +4,7 @@ layers:
   - ''
   - {t: Q, h: Ctl+ Q}
   - L
-  - Y
+  - {t: Y, h: LCTRL}
   - P
   - B
   - Z
@@ -16,8 +16,8 @@ layers:
   - ''
   - C
   - R
-  - {t: S, h: LCTRL}
-  - {t: T, h: LEFT SHIFT}
+  - S
+  - T
   - G
   - M
   - N
@@ -361,9 +361,9 @@ combos:
   k: {t: BT, h: '1'}
 - p: [2, 14]
   k: {t: '&altzero', h: '&altone'}
-- p: [30, 31]
+- p: [30, 31, 18, 19]
   k: Gui+ D
-- p: [18, 6]
+- p: [18, 6, 7, 19]
   k: Gui+Sft+ S
 - p: [13, 25]
   k: '`'
@@ -379,7 +379,7 @@ combos:
   k: F3
 - p: [28, 29]
   k: F2
-- p: [6, 7]
+- p: [6, 18]
   k: {t: '&altleft', h: '&althome'}
 - p: [30, 18]
   k: '"'
@@ -405,3 +405,7 @@ combos:
   k: DELETE
 - p: [19, 20, 21]
   k: {t: scroll, h: toggle}
+- p: [31, 30]
+  k: L CLK
+- p: [14, 26]
+  k: {t: LEFT SHIFT, h: sticky}
