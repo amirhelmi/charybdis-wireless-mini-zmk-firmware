@@ -41,7 +41,7 @@ layers:
   - {t: SPACE, h: NAV}
   - {t: TAB, h: num}
   - {t: LEFT SHIFT, h: sticky}
-  - {t: '&key_repeat', h: '&switchwin'}
+  - {t: '&key_repeat', h: '&lt 1'}
   num:
   - {t: ▽, type: trans}
   - F9
@@ -404,7 +404,7 @@ combos:
 - p: [16, 28]
   k: DELETE
 - p: [19, 20, 21]
-  k: {t: scroll, h: toggle}
+  k: '&switchwin'
 - p: [33, 32]
   k: L CLK
 - p: [14, 26]
