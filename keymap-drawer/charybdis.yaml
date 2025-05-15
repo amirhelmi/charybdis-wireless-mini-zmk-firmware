@@ -38,10 +38,10 @@ layers:
   - ''''
   - ''
   - L CLK
-  - {t: SPACE, h: NAV}
-  - {t: TAB, h: num}
+  - {t: SPACE, h: num}
+  - TAB
   - {t: LEFT SHIFT, h: sticky}
-  - {t: '&key_repeat', h: num}
+  - {t: '&key_repeat', h: NAV}
   num:
   - {t: ▽, type: trans}
   - F9
@@ -80,8 +80,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   NAV:
@@ -122,10 +122,10 @@ layers:
   - ''
   - ''
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - BACK
-  - {t: ▽, type: trans}
+  - {type: held}
   switch:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
