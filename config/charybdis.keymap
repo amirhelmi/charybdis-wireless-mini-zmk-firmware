@@ -80,7 +80,7 @@
             #binding-cells = <2>;
             flavor = "tap-unless-interrupted";
             tapping-term-ms = <1000>;
-            bindings = <&lt>, <&key_repeat>;
+            bindings = <&mo>, <&key_repeat>;
 
             require-prior-idle-ms = <200>;
             label = "NUM_REPEATBEHAV";
