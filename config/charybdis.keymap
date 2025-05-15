@@ -256,7 +256,7 @@
 
         appmenu {
             bindings = <&kp K_CONTEXT_MENU>;
-            key-positions = <32 33>;
+            key-positions = <30 31>;
         };
 
         hash {
@@ -401,7 +401,7 @@
 
         righthandleftclick {
             bindings = <&mkp LCLK>;
-            key-positions = <31 30>;
+            key-positions = <33 32>;
         };
 
         leftstickyshift {
@@ -547,7 +547,7 @@
             bindings = <
 &none  &mt LC(Q) Q  &kp L        &mt LCTRL Y  &kp P        &kp B        &kp Z           &kp F               &kp O        &kp U       &mt LC(SLASH) SLASH  &none
 &none  &kp C        &kp R        &kp S        &kp T        &kp G        &kp M           &kp N               &kp E        &kp I       &kp A                &none
-&none  &kp W        &mt LC(J) J  &lt 4 V      &kp D        &kp K        &kp X           &kp H               &lt 5 COMMA  &kp PERIOD  &kp SINGLE_QUOTE     &none
+&none  &kp W        &mt LC(J) J  &lt 4 V      &kp D        &kp K        &kp X           &mt LEFT_SHIFT H    &lt 5 COMMA  &kp PERIOD  &kp SINGLE_QUOTE     &none
                                  &mkp LCLK    &lt 2 SPACE  &lt 1 TAB    &sk LEFT_SHIFT  &switch_repeat 0 0
             >;
         };

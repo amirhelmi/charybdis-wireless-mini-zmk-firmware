@@ -32,7 +32,7 @@ layers:
   - D
   - K
   - X
-  - H
+  - {t: H, h: LEFT SHIFT}
   - {t: ',', h: scroll}
   - .
   - ''''
@@ -347,7 +347,7 @@ combos:
   k: {t: Ctl+ D, h: Ctl+ R}
 - p: [16, 3]
   k: Ctl+ E
-- p: [32, 33]
+- p: [30, 31]
   k: CONTEXT MENU
 - p: [32, 21]
   k: '#'
@@ -405,7 +405,7 @@ combos:
   k: DELETE
 - p: [19, 20, 21]
   k: {t: scroll, h: toggle}
-- p: [31, 30]
+- p: [33, 32]
   k: L CLK
 - p: [14, 26]
   k: {t: LEFT SHIFT, h: sticky}
