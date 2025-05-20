@@ -447,7 +447,7 @@
         slogan: slogan {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(S) &kp R &kp U &kp T &kp H &kp L &kp E &kp S &kp D &kp O &kp P &kp A &kp M &kp I &kp N &kp E &kp S &kp T &kp A &kp T &kp E &kp DLLR &kp PRCNT &kp CARET &kp PLUS>;
+            bindings = <&kp LS(T) &kp R &kp A &kp C &kp K &kp B &kp A &kp L &kp L &kp LS(G) &kp L &kp O &kp V &kp E &kp N3 &kp N5 &kp LS(E) &kp N &kp D &kp LS(G) &kp A &kp M &kp E>;
             label = "SLOGAN";
         };
 
@@ -553,10 +553,10 @@
 
         num {
             bindings = <
-&trans  &kp F9  &kp F5  &kp F11         &kp F3        &trans    &trans  &kp F12       &kp F10  &kp F4        &kp F8  &trans
-&trans  &kp N9  &kp N5  &lt 2 NUMBER_1  &kp NUMBER_3  &trans    &kp F2  &kp NUMBER_2  &kp N0   &kp NUMBER_4  &kp N8  &trans
-&trans  &trans  &trans  &trans          &kp N7        &kp F7    &kp F6  &kp NUMBER_6  &trans   &trans        &trans  &trans
-                        &trans          &trans        &trans    &trans  &trans
+&trans  &kp F9  &kp F5  &kp F11       &kp F3        &trans    &trans  &kp F12       &kp F10  &kp F4        &kp F8  &trans
+&trans  &kp N9  &kp N5  &kp NUMBER_1  &kp NUMBER_3  &trans    &kp F2  &kp NUMBER_2  &kp N0   &kp NUMBER_4  &kp N8  &trans
+&trans  &trans  &trans  &trans        &kp N7        &kp F7    &kp F6  &kp NUMBER_6  &trans   &trans        &trans  &trans
+                        &trans        &trans        &trans    &trans  &trans
             >;
         };
 
