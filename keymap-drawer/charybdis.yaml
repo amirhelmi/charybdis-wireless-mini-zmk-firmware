@@ -403,7 +403,7 @@ combos:
   k: {t: NAV, h: toggle}
 - p: [16, 28]
   k: DELETE
-- p: [19, 20, 21]
+- p: [20, 40]
   k: '&switchwin'
 - p: [33, 32]
   k: L CLK
