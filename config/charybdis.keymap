@@ -524,7 +524,7 @@
         repbor: repbor {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N1 &kp LS(L) &kp J &kp LS(X) &kp H &kp LS(Y) &kp E &kp Q &kp N1 &kp C &kp LS(E) &kp LS(M) &kp LS(M) &kp W &kp LS(D) &kp LS(R) &kp LS(O) &kp Z &kp N8 &kp N8 &kp N7 &kp Q &kp N9 &kp LS(Y) &kp LS(U) &kp LS(A) &kp B &kp W &kp N &kp LS(Y) &kp P &kp K &kp R &kp N4 &kp N3 &kp I &kp F &kp LS(R) &kp Y &kp LS(F) &kp LS(U) &kp C &kp U &kp A &kp Y &kp LS(L) &kp N0 &kp LS(K) &kp LS(I) &kp N5 &kp P &kp L &kp LS(J) &kp LS(Q) &kp LS(Q) &kp LS(J) &kp N9 &kp N9 &kp LS(B) &kp LS(D) &kp LS(A) &kp LS(C) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(I) &kp LS(A) &kp LS(Y) &kp N &kp LS(K) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(S) &kp LS(A) &kp LS(Z) &kp LS(D) &kp LS(O) &kp N1 &kp H &kp LS(G) &kp LS(G)>;
+            bindings = <&kp LS(A) &kp LS(P) &kp N1 &kp P &kp LS(Q) &kp LS(K) &kp E &kp R &kp LS(U) &kp LS(W) &kp LS(A) &kp LS(T) &kp I &kp I &kp LS(C) &kp LS(L) &kp X &kp W &kp LS(W) &kp LS(T) &kp C &kp D &kp N8 &kp LS(P) &kp O &kp LS(E) &kp L &kp LS(A) &kp N7 &kp LS(Z) &kp F &kp LS(Z) &kp T &kp N &kp N1 &kp N9 &kp LS(V) &kp C &kp LS(R) &kp LS(V) &kp C &kp LS(D) &kp LS(A) &kp LS(M) &kp Y &kp LS(Y) &kp LS(L) &kp LS(D) &kp S &kp LS(Q) &kp N &kp LS(M) &kp LS(J) &kp LS(Q) &kp LS(Q) &kp LS(J) &kp N9 &kp N9 &kp LS(B) &kp LS(E) &kp LS(A) &kp LS(C) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(I) &kp LS(A) &kp LS(Y) &kp N &kp LS(K) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(S) &kp LS(A) &kp LS(Z) &kp LS(D) &kp LS(O) &kp N1 &kp LS(O) &kp U &kp LS(P)>;
             label = "REPBOR";
         };
     };
