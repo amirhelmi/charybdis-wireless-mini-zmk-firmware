@@ -5,7 +5,7 @@ layers:
   - {t: Q, h: Ctl+ Q}
   - L
   - {t: Y, h: LCTRL}
-  - P
+  - {t: P, h: LEFT SHIFT}
   - B
   - Z
   - F
@@ -106,20 +106,20 @@ layers:
   - {t: HOME, h: Ctl+ HOME}
   - LEFT
   - DOWN
+  - UP ARROW
   - RIGHT
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {t: END, h: Ctl+ END}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - Sft+ HOME
   - Sft+ LEFT
-  - ''
+  - Sft+ DOWN
+  - Sft+ UP ARROW
   - Sft+ RIGHT
-  - Sft+ END
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -403,7 +403,7 @@ combos:
   k: {t: NAV, h: toggle}
 - p: [16, 28]
   k: DELETE
-- p: [20, 40]
+- p: [40, 19, 21]
   k: '&switchwin'
 - p: [33, 32]
   k: L CLK
