@@ -402,6 +402,11 @@
             bindings = <&sk LEFT_SHIFT>;
             key-positions = <14 26>;
         };
+
+        funcion {
+            bindings = <&sl 4>;
+            key-positions = <37 40>;
+        };
     };
 
     macros {
@@ -541,16 +546,16 @@
             bindings = <
 &none  &mt LC(Q) Q  &kp L        &mt LCTRL Y  &mt LEFT_SHIFT P  &kp B      &kp Z           &kp F           &kp O                 &kp U       &mt LC(SLASH) SLASH  &none
 &none  &kp C        &kp R        &kp S        &kp T             &kp G      &kp M           &kp N           &kp E                 &kp I       &kp A                &none
-&none  &kp W        &mt LC(J) J  &lt 4 V      &kp D             &kp K      &kp X           &lt 5 H         &mt LEFT_SHIFT COMMA  &kp PERIOD  &kp SINGLE_QUOTE     &none
+&none  &kp W        &mt LC(J) J  &lt 5 V      &kp D             &kp K      &kp X           &lt 6 H         &mt LEFT_SHIFT COMMA  &kp PERIOD  &kp SINGLE_QUOTE     &none
                                  &mkp LCLK    &lt 1 SPACE       &kp TAB    &sk LEFT_SHIFT  &mo_repeat 2 0
             >;
         };
 
         num {
             bindings = <
-&trans  &kp F9  &kp F5  &kp F11       &kp F3        &trans    &trans  &kp F12       &kp F10  &kp F4        &kp F8  &trans
-&trans  &kp N9  &kp N5  &kp NUMBER_1  &kp NUMBER_3  &trans    &kp F2  &kp NUMBER_2  &kp N0   &kp NUMBER_4  &kp N8  &trans
-&trans  &trans  &trans  &trans        &kp N7        &kp F7    &kp F6  &kp NUMBER_6  &trans   &trans        &trans  &trans
+&trans  &trans  &trans  &trans        &trans        &trans    &trans  &trans        &trans  &trans        &trans  &trans
+&trans  &kp N9  &kp N5  &kp NUMBER_1  &kp NUMBER_3  &trans    &trans  &kp NUMBER_2  &kp N0  &kp NUMBER_4  &kp N8  &trans
+&trans  &trans  &trans  &trans        &kp N7        &trans    &trans  &kp NUMBER_6  &trans  &trans        &trans  &trans
                         &trans        &trans        &trans    &trans  &trans
             >;
         };
@@ -573,10 +578,19 @@
             >;
         };
 
+        functionkey {
+            bindings = <
+&trans  &trans  &trans  &kp F11  &trans  &trans    &trans  &kp F12  &trans   &trans  &trans  &trans
+&trans  &kp F9  &kp F5  &kp F1   &kp F3  &trans    &trans  &kp F2   &kp F10  &kp F4  &kp F8  &trans
+&trans  &trans  &trans  &trans   &kp F7  &trans    &trans  &kp F6   &trans   &trans  &trans  &trans
+                        &trans   &trans  &trans    &trans  &trans
+            >;
+        };
+
         snipe {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &mo 6   &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &mo 7   &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans
             >;
@@ -585,7 +599,7 @@
         scroll {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &mo 6   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &mo 7   &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &mkp MB4  &mkp MB5
             >;
