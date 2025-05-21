@@ -92,9 +92,9 @@ layers:
   - LEFT SHIFT
   - ''
   - ''
-  - ''
+  - PAGE DOWN
   - UP ARROW
-  - ''
+  - PAGE DOWN
   - ''
   - ''
   - {t: ▽, type: trans}
@@ -106,8 +106,8 @@ layers:
   - {t: HOME, h: Ctl+ HOME}
   - LEFT
   - DOWN
-  - UP ARROW
   - RIGHT
+  - UP ARROW
   - ''
   - ''
   - ''
@@ -118,8 +118,8 @@ layers:
   - {t: END, h: Ctl+ END}
   - Sft+ LEFT
   - Sft+ DOWN
-  - Sft+ UP ARROW
   - Sft+ RIGHT
+  - Sft+ UP ARROW
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
