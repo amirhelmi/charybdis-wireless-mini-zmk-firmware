@@ -32,8 +32,8 @@ layers:
   - D
   - K
   - X
-  - {t: H, h: LEFT SHIFT}
-  - {t: ',', h: scroll}
+  - {t: H, h: scroll}
+  - {t: ',', h: LEFT SHIFT}
   - .
   - ''''
   - ''
@@ -88,8 +88,8 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
+  - LEFT CONTROL
+  - LEFT SHIFT
   - ''
   - ''
   - ''
@@ -100,14 +100,14 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LCTRL
-  - LEFT SHIFT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ''
-  - {t: HOME, h: Sft+ HOME}
+  - {t: HOME, h: Ctl+ HOME}
   - LEFT
   - DOWN
   - RIGHT
-  - {t: END, h: Sft+ END}
+  - {t: END, h: Ctl+ END}
   - ''
   - ''
   - ''
@@ -115,11 +115,11 @@ layers:
   - ''
   - ''
   - ''
+  - Sft+ HOME
+  - Sft+ LEFT
   - ''
-  - PAGE UP
-  - PAGE DOWN
-  - ''
-  - ''
+  - Sft+ RIGHT
+  - Sft+ END
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -242,8 +242,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

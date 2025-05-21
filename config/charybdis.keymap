@@ -544,9 +544,9 @@
 
         BASE {
             bindings = <
-&none  &mt LC(Q) Q  &kp L        &mt LCTRL Y  &kp P        &kp B      &kp Z           &kp F             &kp O        &kp U       &mt LC(SLASH) SLASH  &none
-&none  &kp C        &kp R        &kp S        &kp T        &kp G      &kp M           &kp N             &kp E        &kp I       &kp A                &none
-&none  &kp W        &mt LC(J) J  &lt 4 V      &kp D        &kp K      &kp X           &mt LEFT_SHIFT H  &lt 5 COMMA  &kp PERIOD  &kp SINGLE_QUOTE     &none
+&none  &mt LC(Q) Q  &kp L        &mt LCTRL Y  &kp P        &kp B      &kp Z           &kp F           &kp O                 &kp U       &mt LC(SLASH) SLASH  &none
+&none  &kp C        &kp R        &kp S        &kp T        &kp G      &kp M           &kp N           &kp E                 &kp I       &kp A                &none
+&none  &kp W        &mt LC(J) J  &lt 4 V      &kp D        &kp K      &kp X           &lt 5 H         &mt LEFT_SHIFT COMMA  &kp PERIOD  &kp SINGLE_QUOTE     &none
                                  &mkp LCLK    &lt 1 SPACE  &kp TAB    &sk LEFT_SHIFT  &mo_repeat 2 0
             >;
         };
@@ -562,10 +562,10 @@
 
         NAV {
             bindings = <
-&none   &none   &none   &none      &none           &none     &none              &none           &kp UP_ARROW   &none      &none            &none
-&trans  &trans  &trans  &kp LCTRL  &kp LEFT_SHIFT  &none     &mt LS(HOME) HOME  &kp LEFT_ARROW  &kp DOWN       &kp RIGHT  &mt LS(END) END  &none
-&none   &none   &none   &none      &none           &none     &none              &kp PAGE_UP     &kp PAGE_DOWN  &none      &none            &none
-                        &trans     &trans          &trans    &mkp MB4           &trans
+&none   &none   &none   &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none     &none              &none               &kp UP_ARROW  &none                &none            &none
+&trans  &trans  &trans  &trans            &trans          &none     &mt LC(HOME) HOME  &kp LEFT_ARROW      &kp DOWN      &kp RIGHT            &mt LC(END) END  &none
+&none   &none   &none   &none             &none           &none     &kp LS(HOME)       &kp LS(LEFT_ARROW)  &none         &kp LS(RIGHT_ARROW)  &kp LS(END)      &none
+                        &trans            &trans          &trans    &mkp MB4           &trans
             >;
         };
 
