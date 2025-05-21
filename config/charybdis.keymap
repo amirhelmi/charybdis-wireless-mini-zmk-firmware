@@ -168,7 +168,7 @@
         };
 
         underscore {
-            bindings = <&kp UNDER>;
+            bindings = <&kp MINUS>;
             key-positions = <31 33>;
         };
 
@@ -255,16 +255,11 @@
 
         appmenu {
             bindings = <&kp K_CONTEXT_MENU>;
-            key-positions = <30 31>;
-        };
-
-        hash {
-            bindings = <&kp HASH>;
             key-positions = <32 21>;
         };
 
         at {
-            bindings = <&kp AT>;
+            bindings = <&mt HASH AT>;
             key-positions = <33 20>;
         };
 

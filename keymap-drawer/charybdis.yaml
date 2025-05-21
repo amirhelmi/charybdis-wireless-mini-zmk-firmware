@@ -314,7 +314,7 @@ combos:
 - p: [18, 19, 17, 16]
   k: BT CLR
 - p: [31, 33]
-  k: _
+  k: '-'
 - p: [18, 19]
   k: '-'
 - p: [14, 16]
@@ -347,12 +347,10 @@ combos:
   k: {t: Ctl+ D, h: Ctl+ R}
 - p: [16, 3]
   k: Ctl+ E
-- p: [30, 31]
-  k: CONTEXT MENU
 - p: [32, 21]
-  k: '#'
+  k: CONTEXT MENU
 - p: [33, 20]
-  k: '@'
+  k: {t: '@', h: '#'}
 - p: [26, 27, 28]
   k: {t: LEFT GUI, h: sticky}
 - p: [1, 13]
