@@ -32,8 +32,8 @@ layers:
   - D
   - K
   - X
-  - {t: H, h: scroll}
-  - {t: ',', h: LEFT SHIFT}
+  - H
+  - {t: ',', h: scroll}
   - .
   - ''''
   - ''
@@ -284,8 +284,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
