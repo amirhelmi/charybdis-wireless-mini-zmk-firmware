@@ -94,7 +94,7 @@ layers:
   - ''
   - PAGE DOWN
   - UP ARROW
-  - PAGE DOWN
+  - PAGE UP
   - ''
   - ''
   - {t: ▽, type: trans}
@@ -206,10 +206,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
+  - {type: held}
+  - {t: ▽, type: trans}
   snipe:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -371,8 +371,6 @@ combos:
   k: '&statement'
 - p: [31, 32]
   k: ENTER
-- p: [38, 39]
-  k: CAPS WORD
 - p: [15, 27]
   k: {t: LEFT CONTROL, h: sticky}
 - p: [5, 17]
@@ -449,5 +447,5 @@ combos:
   k: L CLK
 - p: [14, 26]
   k: {t: LEFT SHIFT, h: sticky}
-- p: [37, 40]
+- p: [38, 39]
   k: {t: functionkey, h: sticky}
