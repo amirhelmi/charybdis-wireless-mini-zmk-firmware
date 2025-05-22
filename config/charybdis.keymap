@@ -385,7 +385,7 @@
 
         switchwinright {
             bindings = <&switchwin>;
-            key-positions = <40 19 21>;
+            key-positions = <40 19 20>;
         };
 
         righthandleftclick {

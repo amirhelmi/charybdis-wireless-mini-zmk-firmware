@@ -32,7 +32,7 @@ layers:
   - D
   - K
   - X
-  - H
+  - {t: H, h: scroll}
   - {t: ',', h: scroll}
   - .
   - ''''
@@ -284,8 +284,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -441,7 +441,7 @@ combos:
   k: {t: NAV, h: toggle}
 - p: [16, 28]
   k: DELETE
-- p: [40, 19, 21]
+- p: [40, 19, 20]
   k: '&switchwin'
 - p: [33, 32]
   k: L CLK
