@@ -107,7 +107,7 @@ layers:
   - LEFT
   - DOWN
   - RIGHT
-  - UP ARROW
+  - {t: END, h: Ctl+ END}
   - ''
   - ''
   - ''
