@@ -39,9 +39,9 @@ layers:
   - ''
   - L CLK
   - {t: SPACE, h: num}
-  - TAB
+  - {t: TAB, h: NAV}
   - {t: LEFT SHIFT, h: sticky}
-  - {t: '&key_repeat', h: NAV}
+  - '&key_repeat'
   num:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -123,9 +123,9 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - BACK
   - {type: held}
+  - BACK
+  - {t: ▽, type: trans}
   switch:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -357,8 +357,8 @@ combos:
   k: BT CLR
 - p: [31, 33]
   k: '-'
-- p: [18, 19]
-  k: '-'
+- p: [31, 34]
+  k: _
 - p: [14, 16]
   k: {t: LEFT ALT, h: sticky}
 - p: [40, 19]
@@ -387,7 +387,7 @@ combos:
   k: {t: Ctl+ D, h: Ctl+ R}
 - p: [16, 3]
   k: Ctl+ E
-- p: [32, 21]
+- p: [32, 33]
   k: CONTEXT MENU
 - p: [33, 20]
   k: {t: '@', h: '#'}
@@ -399,11 +399,9 @@ combos:
   k: {t: BT, h: '1'}
 - p: [2, 14]
   k: {t: '&altzero', h: '&altone'}
-- p: [30, 31, 18, 19]
-  k: Gui+ D
-- p: [18, 6, 7, 19]
+- p: [7, 19, 8, 20]
   k: Gui+Sft+ S
-- p: [13, 25]
+- p: [13, 14, 15]
   k: '`'
 - p: [33, 21]
   k: '?'
@@ -443,8 +441,6 @@ combos:
   k: DELETE
 - p: [40, 19, 20]
   k: '&switchwin'
-- p: [33, 32]
-  k: L CLK
 - p: [14, 26]
   k: {t: LEFT SHIFT, h: sticky}
 - p: [38, 39]

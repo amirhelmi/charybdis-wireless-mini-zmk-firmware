@@ -173,8 +173,8 @@
         };
 
         minus {
-            bindings = <&kp MINUS>;
-            key-positions = <18 19>;
+            bindings = <&kp UNDER>;
+            key-positions = <31 34>;
         };
 
         stickyalt {
@@ -250,7 +250,7 @@
 
         appmenu {
             bindings = <&kp K_CONTEXT_MENU>;
-            key-positions = <32 21>;
+            key-positions = <32 33>;
         };
 
         at {
@@ -278,19 +278,14 @@
             key-positions = <2 14>;
         };
 
-        showdesktop {
-            bindings = <&kp LG(D)>;
-            key-positions = <30 31 18 19>;
-        };
-
         printscreen {
             bindings = <&kp LG(LS(S))>;
-            key-positions = <18 6 7 19>;
+            key-positions = <7 19 8 20>;
         };
 
         grave {
             bindings = <&kp GRAVE>;
-            key-positions = <13 25>;
+            key-positions = <13 14 15>;
         };
 
         question {
@@ -386,11 +381,6 @@
         switchwinright {
             bindings = <&switchwin>;
             key-positions = <40 19 20>;
-        };
-
-        righthandleftclick {
-            bindings = <&mkp LCLK>;
-            key-positions = <33 32>;
         };
 
         leftstickyshift {
@@ -539,10 +529,10 @@
 
         BASE {
             bindings = <
-&none  &mt LC(Q) Q  &kp L        &mt LCTRL Y  &mt LEFT_SHIFT P  &kp B      &kp Z           &kp F           &kp O        &kp U       &mt LC(SLASH) SLASH  &none
-&none  &kp C        &kp R        &kp S        &kp T             &kp G      &kp M           &kp N           &kp E        &kp I       &kp A                &none
-&none  &kp W        &mt LC(J) J  &lt 5 V      &kp D             &kp K      &kp X           &lt 6 H         &lt 6 COMMA  &kp PERIOD  &kp SINGLE_QUOTE     &none
-                                 &mkp LCLK    &lt 1 SPACE       &kp TAB    &sk LEFT_SHIFT  &mo_repeat 2 0
+&none  &mt LC(Q) Q  &kp L        &mt LCTRL Y  &mt LEFT_SHIFT P  &kp B        &kp Z           &kp F        &kp O        &kp U       &mt LC(SLASH) SLASH  &none
+&none  &kp C        &kp R        &kp S        &kp T             &kp G        &kp M           &kp N        &kp E        &kp I       &kp A                &none
+&none  &kp W        &mt LC(J) J  &lt 5 V      &kp D             &kp K        &kp X           &lt 6 H      &lt 6 COMMA  &kp PERIOD  &kp SINGLE_QUOTE     &none
+                                 &mkp LCLK    &lt 1 SPACE       &lt 2 TAB    &sk LEFT_SHIFT  &key_repeat
             >;
         };
 
