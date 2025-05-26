@@ -229,12 +229,12 @@
 
         redo {
             bindings = <&kp LC(Y)>;
-            key-positions = <2 3>;
+            key-positions = <2 4 3>;
         };
 
         undo {
             bindings = <&kp LC(Z)>;
-            key-positions = <3 4>;
+            key-positions = <3 2>;
         };
 
         calc_rel {

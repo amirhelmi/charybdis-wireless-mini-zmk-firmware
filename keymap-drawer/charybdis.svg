@@ -5532,9 +5532,9 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key held side"/>
 <rect rx="4" ry="4" x="-6" y="-10" width="12" height="12" class="key held"/>
 </g>
-<g transform="translate(126, 76)" class="key keypos-5">
-<rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key side"/>
-<rect rx="4" ry="4" x="-6" y="-10" width="12" height="12" class="key"/>
+<g transform="translate(126, 76)" class="key held keypos-5">
+<rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key held side"/>
+<rect rx="4" ry="4" x="-6" y="-10" width="12" height="12" class="key held"/>
 </g>
 <g transform="translate(154, 76)" class="key keypos-6">
 <rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key side"/>
@@ -5699,17 +5699,17 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key side"/>
 <rect rx="4" ry="4" x="-6" y="-10" width="12" height="12" class="key"/>
 </g>
-<g transform="translate(70, 76)" class="key keypos-3">
-<rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key side"/>
-<rect rx="4" ry="4" x="-6" y="-10" width="12" height="12" class="key"/>
+<g transform="translate(70, 76)" class="key held keypos-3">
+<rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key held side"/>
+<rect rx="4" ry="4" x="-6" y="-10" width="12" height="12" class="key held"/>
 </g>
 <g transform="translate(98, 72)" class="key held keypos-4">
 <rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key held side"/>
 <rect rx="4" ry="4" x="-6" y="-10" width="12" height="12" class="key held"/>
 </g>
-<g transform="translate(126, 76)" class="key held keypos-5">
-<rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key held side"/>
-<rect rx="4" ry="4" x="-6" y="-10" width="12" height="12" class="key held"/>
+<g transform="translate(126, 76)" class="key keypos-5">
+<rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key side"/>
+<rect rx="4" ry="4" x="-6" y="-10" width="12" height="12" class="key"/>
 </g>
 <g transform="translate(154, 76)" class="key keypos-6">
 <rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key side"/>
