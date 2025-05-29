@@ -41,7 +41,7 @@ layers:
   - {t: SPACE, h: num}
   - {t: TAB, h: NAV}
   - {t: LEFT SHIFT, h: sticky}
-  - NAV
+  - {t: '&key_repeat', h: NAV}
   num:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
