@@ -445,3 +445,5 @@ combos:
   k: {t: LEFT SHIFT, h: sticky}
 - p: [19, 20, 15, 16]
   k: {t: functionkey, h: sticky}
+- p: [37, 40]
+  k: num

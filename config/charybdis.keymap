@@ -393,6 +393,11 @@
             bindings = <&sl 4>;
             key-positions = <19 20 15 16>;
         };
+
+        nummo {
+            bindings = <&mo 1>;
+            key-positions = <37 40>;
+        };
     };
 
     macros {
