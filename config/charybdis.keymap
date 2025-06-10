@@ -230,12 +230,12 @@
 
         redo {
             bindings = <&kp LC(Y)>;
-            key-positions = <2 4 3>;
+            key-positions = <4 3 15>;
         };
 
         undo {
             bindings = <&kp LC(Z)>;
-            key-positions = <3 2>;
+            key-positions = <3 15>;
         };
 
         calc_rel {
@@ -397,6 +397,11 @@
         nummo {
             bindings = <&mo 1>;
             key-positions = <37 40>;
+        };
+
+        copytwo {
+            bindings = <&kp LC(C)>;
+            key-positions = <2 3>;
         };
     };
 
