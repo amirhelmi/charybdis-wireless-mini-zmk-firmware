@@ -184,12 +184,12 @@ layers:
   - {t: ▽, type: trans}
   - F9
   - F5
-  - {t: F1, type: held}
-  - {t: F3, type: held}
+  - F1
+  - F3
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: F2, type: held}
-  - {t: F10, type: held}
+  - F2
+  - F10
   - F4
   - F8
   - {t: ▽, type: trans}
@@ -206,10 +206,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   snipe:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -379,7 +379,7 @@ combos:
   k: INSERT
 - p: [26, 15]
   k: ESCAPE
-- p: [4, 3, 15]
+- p: [4, 3, 2]
   k: Ctl+ Y
 - p: [3, 15]
   k: Ctl+ Z
@@ -401,14 +401,12 @@ combos:
   k: {t: '&altzero', h: '&altone'}
 - p: [7, 19, 8, 20]
   k: Gui+Sft+ S
-- p: [13, 14, 15]
+- p: [17, 29]
   k: '`'
 - p: [33, 21]
   k: '?'
 - p: [32, 20]
   k: '&ctrlback'
-- p: [17, 29]
-  k: Ctl+ F4
 - p: [4, 5]
   k: F6
 - p: [17, 16]
@@ -442,10 +440,14 @@ combos:
 - p: [40, 19, 20]
   k: '&switchwin'
 - p: [14, 26]
-  k: {t: LEFT SHIFT, h: sticky}
-- p: [19, 20, 15, 16]
-  k: {t: functionkey, h: sticky}
+  k: Ctl+ /
 - p: [37, 40]
-  k: num
+  k: {t: functionkey, h: sticky}
 - p: [2, 3]
   k: Ctl+ C
+- p: [13, 25]
+  k: Ctl+ F4
+- p: [37, 29]
+  k: '&e2eruntsc'
+- p: [40, 30]
+  k: '&e2erunchrome'
