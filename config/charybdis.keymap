@@ -7,12 +7,20 @@
 
 &sk { quick-release; };
 
-&lt { require-prior-idle-ms = <180>; };
+&lt {
+    require-prior-idle-ms = <150>;
+    tapping-term-ms = <280>;
+    quick-tap-ms = <175>;
+    hold-trigger-on-release;
+    flavor = "balanced";
+};
 
 &mt {
     flavor = "balanced";
-    require-prior-idle-ms = <180>;
-    hold-trigger-key-positions = <36>;
+    require-prior-idle-ms = <150>;
+    tapping-term-ms = <280>;
+    quick-tap-ms = <175>;
+    hold-trigger-on-release;
 };
 
 / {
@@ -560,7 +568,7 @@
         BASE {
             bindings = <
 &none  &mt LC(Q) Q  &lt 2 L      &mt LCTRL Y  &mt LEFT_SHIFT P  &kp B        &kp Z           &kp F           &kp O        &kp U       &mt LC(SLASH) SLASH  &none
-&none  &kp C        &kp R        &kp S        &kp T             &kp G        &kp M           &kp N           &kp E        &kp I       &kp A                &none
+&none  &kp C        &lt 2 R      &mt LCTRL S  &mt LSHIFT T      &kp G        &kp M           &kp N           &kp E        &kp I       &kp A                &none
 &none  &kp W        &mt LC(J) J  &lt 5 V      &kp D             &kp K        &kp X           &lt 6 H         &lt 6 COMMA  &kp PERIOD  &kp SINGLE_QUOTE     &none
                                  &mkp LCLK    &lt 1 SPACE       &lt 2 TAB    &sk LEFT_SHIFT  &mo_repeat 2 0
             >;

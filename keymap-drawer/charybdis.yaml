@@ -15,9 +15,9 @@ layers:
   - ''
   - ''
   - C
-  - R
-  - S
-  - T
+  - {t: R, h: NAV}
+  - {t: S, h: LCTRL}
+  - {t: T, h: LSHIFT}
   - G
   - M
   - N
