@@ -3,15 +3,15 @@ layers:
   BASE:
   - ''
   - {t: Q, h: Ctl+ Q}
-  - {t: L, h: NAV}
-  - {t: Y, h: LCTRL}
-  - {t: P, h: LEFT SHIFT}
+  - L
+  - Y
+  - P
   - B
   - Z
   - F
   - O
   - U
-  - {t: /, h: Ctl+ /}
+  - /
   - ''
   - ''
   - C
@@ -39,9 +39,9 @@ layers:
   - ''
   - L CLK
   - {t: SPACE, h: num}
-  - {t: TAB, h: NAV}
+  - TAB
   - {t: LEFT SHIFT, h: sticky}
-  - {t: '&key_repeat', h: NAV}
+  - '&key_repeat'
   num:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -87,7 +87,7 @@ layers:
   NAV:
   - ''
   - ''
-  - {type: held}
+  - ''
   - LEFT CONTROL
   - LEFT SHIFT
   - ''
@@ -99,7 +99,7 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
