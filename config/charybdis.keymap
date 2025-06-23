@@ -567,10 +567,10 @@
 
         BASE {
             bindings = <
-&none  &mt LC(Q) Q  &kp L        &kp Y        &kp P         &kp B      &kp Z           &kp F        &kp O        &kp U       &kp SLASH         &none
-&none  &kp C        &lt 2 R      &mt LCTRL S  &mt LSHIFT T  &kp G      &kp M           &kp N        &kp E        &kp I       &kp A             &none
-&none  &kp W        &mt LC(J) J  &lt 5 V      &kp D         &kp K      &kp X           &lt 6 H      &lt 6 COMMA  &kp PERIOD  &kp SINGLE_QUOTE  &none
-                                 &mkp LCLK    &lt 1 SPACE   &kp TAB    &sk LEFT_SHIFT  &key_repeat
+&none  &mt LC(Q) Q  &kp L        &kp Y      &kp P         &kp B      &kp Z           &kp F        &kp O        &kp U       &kp SLASH         &none
+&none  &kp C        &mt LCTRL R  &lt 2 S    &mt LSHIFT T  &kp G      &kp M           &kp N        &kp E        &kp I       &kp A             &none
+&none  &kp W        &mt LC(J) J  &lt 5 V    &kp D         &kp K      &kp X           &lt 6 H      &lt 6 COMMA  &kp PERIOD  &kp SINGLE_QUOTE  &none
+                                 &mkp LCLK  &lt 1 SPACE   &kp TAB    &sk LEFT_SHIFT  &key_repeat
             >;
         };
 

@@ -15,8 +15,8 @@ layers:
   - ''
   - ''
   - C
-  - {t: R, h: NAV}
-  - {t: S, h: LCTRL}
+  - {t: R, h: LCTRL}
+  - {t: S, h: NAV}
   - {t: T, h: LSHIFT}
   - G
   - M
@@ -99,8 +99,8 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - ''
   - {t: HOME, h: Ctl+ HOME}
