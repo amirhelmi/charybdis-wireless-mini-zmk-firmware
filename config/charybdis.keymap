@@ -238,12 +238,12 @@
 
         redo {
             bindings = <&kp LC(Y)>;
-            key-positions = <4 3 2>;
+            key-positions = <3 2>;
         };
 
         undo {
             bindings = <&kp LC(Z)>;
-            key-positions = <3 15>;
+            key-positions = <3 4>;
         };
 
         calc_rel {
@@ -387,9 +387,9 @@
             key-positions = <40 19 20>;
         };
 
-        leftstickyshift {
+        comment {
             bindings = <&kp LC(SLASH)>;
-            key-positions = <14 26>;
+            key-positions = <20 21 19>;
         };
 
         nummo {
@@ -397,14 +397,9 @@
             key-positions = <37 40>;
         };
 
-        copytwo {
-            bindings = <&kp LC(C)>;
-            key-positions = <2 3>;
-        };
-
         ctrlf4 {
             bindings = <&kp LC(F4)>;
-            key-positions = <13 25>;
+            key-positions = <2 3 4>;
         };
 
         eruntsc {

@@ -379,9 +379,9 @@ combos:
   k: INSERT
 - p: [26, 15]
   k: ESCAPE
-- p: [4, 3, 2]
+- p: [3, 2]
   k: Ctl+ Y
-- p: [3, 15]
+- p: [3, 4]
   k: Ctl+ Z
 - p: [14, 3]
   k: {t: Ctl+ D, h: Ctl+ R}
@@ -439,13 +439,11 @@ combos:
   k: DELETE
 - p: [40, 19, 20]
   k: '&switchwin'
-- p: [14, 26]
+- p: [20, 21, 19]
   k: Ctl+ /
 - p: [37, 40]
   k: {t: functionkey, h: sticky}
-- p: [2, 3]
-  k: Ctl+ C
-- p: [13, 25]
+- p: [2, 3, 4]
   k: Ctl+ F4
 - p: [37, 29]
   k: '&e2eruntsc'
