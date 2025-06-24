@@ -359,7 +359,7 @@ combos:
   k: '-'
 - p: [31, 34]
   k: _
-- p: [14, 16]
+- p: [14, 16, 15]
   k: {t: LEFT ALT, h: sticky}
 - p: [40, 19]
   k: ':'
@@ -433,7 +433,7 @@ combos:
   k: {t: '&altdown', h: '&altup'}
 - p: [26, 27]
   k: R CLK
-- p: [16, 14, 15]
+- p: [16, 15, 37]
   k: {t: NAV, h: toggle}
 - p: [16, 28]
   k: DELETE
@@ -449,3 +449,5 @@ combos:
   k: '&e2eruntsc'
 - p: [40, 30]
   k: '&e2erunchrome'
+- p: [3, 15]
+  k: Sft+Alt+ F
