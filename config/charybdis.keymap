@@ -188,7 +188,7 @@
 
         stickyalt {
             bindings = <&sk LEFT_ALT>;
-            key-positions = <14 16>;
+            key-positions = <14 16 15>;
         };
 
         colonn {
@@ -410,6 +410,11 @@
         erunchrome {
             bindings = <&e2erunchrome>;
             key-positions = <40 30>;
+        };
+
+        format {
+            bindings = <&kp LS(LA(F))>;
+            key-positions = <3 15>;
         };
     };
 
