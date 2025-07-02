@@ -416,6 +416,21 @@
             bindings = <&kp LS(LA(F))>;
             key-positions = <3 15>;
         };
+
+        backcomb {
+            bindings = <&mkp MB4>;
+            key-positions = <40 32>;
+        };
+
+        forwardcomb {
+            bindings = <&mkp MB5>;
+            key-positions = <40 33>;
+        };
+
+        leptclick {
+            bindings = <&mkp LCLK>;
+            key-positions = <34 40>;
+        };
     };
 
     macros {

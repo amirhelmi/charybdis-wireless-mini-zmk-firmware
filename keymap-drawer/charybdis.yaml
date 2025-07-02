@@ -451,3 +451,9 @@ combos:
   k: '&e2erunchrome'
 - p: [3, 15]
   k: Sft+Alt+ F
+- p: [40, 32]
+  k: BACK
+- p: [40, 33]
+  k: FWD
+- p: [34, 40]
+  k: L CLK
