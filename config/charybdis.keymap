@@ -154,11 +154,13 @@
         copy {
             bindings = <&kp LC(C)>;
             key-positions = <14 15>;
+            require-prior-idle-ms = <180>;
         };
 
         paste {
             bindings = <&mt LCTRL LC(V)>;
             key-positions = <16 15>;
+            require-prior-idle-ms = <180>;
         };
 
         enterleft {
@@ -259,7 +261,7 @@
 
         appmenu {
             bindings = <&kp K_CONTEXT_MENU>;
-            key-positions = <32 33>;
+            key-positions = <40 34>;
         };
 
         at {
@@ -429,7 +431,7 @@
 
         leptclick {
             bindings = <&mkp LCLK>;
-            key-positions = <34 40>;
+            key-positions = <33 32>;
         };
     };
 

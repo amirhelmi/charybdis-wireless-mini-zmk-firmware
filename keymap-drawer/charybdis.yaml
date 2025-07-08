@@ -387,7 +387,7 @@ combos:
   k: {t: Ctl+ D, h: Ctl+ R}
 - p: [16, 3]
   k: Ctl+ E
-- p: [32, 33]
+- p: [40, 34]
   k: CONTEXT MENU
 - p: [33, 20]
   k: {t: '@', h: '#'}
@@ -455,5 +455,5 @@ combos:
   k: BACK
 - p: [40, 33]
   k: FWD
-- p: [34, 40]
+- p: [33, 32]
   k: L CLK
