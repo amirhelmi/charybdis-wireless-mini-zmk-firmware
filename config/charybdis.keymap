@@ -416,7 +416,7 @@
 
         format {
             bindings = <&kp LS(LA(F))>;
-            key-positions = <3 15>;
+            key-positions = <15 14 13>;
         };
 
         backcomb {
@@ -432,6 +432,11 @@
         leptclick {
             bindings = <&mkp LCLK>;
             key-positions = <33 32>;
+        };
+
+        altone2 {
+            bindings = <&kp LA(NUMBER_1)>;
+            key-positions = <3 15>;
         };
     };
 
