@@ -37,7 +37,7 @@ layers:
   - .
   - ''''
   - ''
-  - L CLK
+  - {t: LCTRL, h: sticky}
   - {t: SPACE, h: num}
   - TAB
   - {t: LEFT SHIFT, h: sticky}
@@ -345,9 +345,9 @@ combos:
   k: {t: (, h: '['}
 - p: [31, 19]
   k: BACK SPACE
-- p: [14, 15]
+- p: [15, 16]
   k: Ctl+ C
-- p: [16, 15]
+- p: [16, 17]
   k: {t: Ctl+ V, h: LCTRL}
 - p: [28, 27]
   k: ENTER
@@ -408,8 +408,6 @@ combos:
 - p: [32, 20]
   k: '&ctrlback'
 - p: [4, 5]
-  k: F6
-- p: [17, 16]
   k: F3
 - p: [28, 29]
   k: F2
@@ -455,7 +453,9 @@ combos:
   k: BACK
 - p: [40, 33]
   k: FWD
-- p: [33, 32]
+- p: [15, 14]
   k: L CLK
 - p: [3, 15]
   k: Alt+ 1
+- p: [33, 32]
+  k: L CLK

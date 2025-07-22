@@ -153,13 +153,13 @@
 
         copy {
             bindings = <&kp LC(C)>;
-            key-positions = <14 15>;
+            key-positions = <15 16>;
             require-prior-idle-ms = <180>;
         };
 
         paste {
             bindings = <&mt LCTRL LC(V)>;
-            key-positions = <16 15>;
+            key-positions = <16 17>;
             require-prior-idle-ms = <180>;
         };
 
@@ -309,14 +309,9 @@
             key-positions = <32 20>;
         };
 
-        f6 {
-            bindings = <&kp F6>;
-            key-positions = <4 5>;
-        };
-
         f3 {
             bindings = <&kp F3>;
-            key-positions = <17 16>;
+            key-positions = <4 5>;
         };
 
         f2 {
@@ -431,12 +426,17 @@
 
         leptclick {
             bindings = <&mkp LCLK>;
-            key-positions = <33 32>;
+            key-positions = <15 14>;
         };
 
         altone2 {
             bindings = <&kp LA(NUMBER_1)>;
             key-positions = <3 15>;
+        };
+
+        lepfff {
+            bindings = <&mkp LCLK>;
+            key-positions = <33 32>;
         };
     };
 
@@ -592,7 +592,7 @@
 &none  &mt LC(Q) Q  &kp L        &kp Y      &kp P         &kp B      &kp Z           &kp F        &kp O        &kp U       &kp SLASH         &none
 &none  &kp C        &mt LCTRL R  &lt 2 S    &mt LSHIFT T  &kp G      &kp M           &kp N        &kp E        &kp I       &kp A             &none
 &none  &kp W        &mt LC(J) J  &lt 5 V    &kp D         &kp K      &kp X           &lt 6 H      &lt 6 COMMA  &kp PERIOD  &kp SINGLE_QUOTE  &none
-                                 &mkp LCLK  &lt 1 SPACE   &kp TAB    &sk LEFT_SHIFT  &key_repeat
+                                 &sk LCTRL  &lt 1 SPACE   &kp TAB    &sk LEFT_SHIFT  &key_repeat
             >;
         };
 
