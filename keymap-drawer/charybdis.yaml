@@ -459,3 +459,5 @@ combos:
   k: Alt+ 1
 - p: [33, 32]
   k: L CLK
+- p: [14, 15, 37]
+  k: CONTEXT MENU

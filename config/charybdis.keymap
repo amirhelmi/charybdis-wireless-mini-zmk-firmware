@@ -438,6 +438,11 @@
             bindings = <&mkp LCLK>;
             key-positions = <33 32>;
         };
+
+        menod {
+            bindings = <&kp K_CONTEXT_MENU>;
+            key-positions = <14 15 37>;
+        };
     };
 
     macros {
