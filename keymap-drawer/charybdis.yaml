@@ -347,7 +347,7 @@ combos:
   k: BACK SPACE
 - p: [15, 16]
   k: Ctl+ C
-- p: [16, 17]
+- p: [16, 15, 37]
   k: {t: Ctl+ V, h: LCTRL}
 - p: [28, 27]
   k: ENTER
@@ -431,7 +431,7 @@ combos:
   k: {t: '&altdown', h: '&altup'}
 - p: [26, 27]
   k: R CLK
-- p: [16, 15, 37]
+- p: [37, 8, 9, 21, 20]
   k: {t: NAV, h: toggle}
 - p: [16, 28]
   k: DELETE

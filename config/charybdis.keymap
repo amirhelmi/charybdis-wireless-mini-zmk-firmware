@@ -159,7 +159,7 @@
 
         paste {
             bindings = <&mt LCTRL LC(V)>;
-            key-positions = <16 17>;
+            key-positions = <16 15 37>;
             require-prior-idle-ms = <180>;
         };
 
@@ -371,7 +371,7 @@
 
         togglenavigation {
             bindings = <&tog 2>;
-            key-positions = <16 15 37>;
+            key-positions = <37 8 9 21 20>;
         };
 
         delete {
