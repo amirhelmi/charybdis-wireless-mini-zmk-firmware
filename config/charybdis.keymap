@@ -152,7 +152,7 @@
         };
 
         copy {
-            bindings = <&mt LC(V) C>;
+            bindings = <&mt LC(V) LC(C)>;
             key-positions = <15 16>;
             require-prior-idle-ms = <180>;
         };
