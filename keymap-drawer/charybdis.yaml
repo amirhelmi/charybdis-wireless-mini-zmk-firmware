@@ -15,7 +15,7 @@ layers:
   - ''
   - ''
   - C
-  - {t: R, h: LCTRL}
+  - R
   - {t: S, h: NAV}
   - {t: T, h: LSHIFT}
   - G
@@ -88,8 +88,8 @@ layers:
   - ''
   - ''
   - ''
-  - LEFT CONTROL
-  - LEFT SHIFT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ''
   - ''
   - HOME
@@ -124,7 +124,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - BACK
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   switch:
   - {t: ▽, type: trans}

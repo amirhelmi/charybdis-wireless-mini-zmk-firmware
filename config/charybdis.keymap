@@ -585,7 +585,7 @@
         BASE {
             bindings = <
 &none  &mt LC(Q) Q  &kp L        &kp Y      &kp P         &kp B      &kp Z           &kp F        &kp O        &kp U       &kp SLASH         &none
-&none  &kp C        &mt LCTRL R  &lt 2 S    &mt LSHIFT T  &kp G      &kp M           &kp N        &kp E        &kp I       &kp A             &none
+&none  &kp C        &kp R        &lt 2 S    &mt LSHIFT T  &kp G      &kp M           &kp N        &kp E        &kp I       &kp A             &none
 &none  &kp W        &mt LC(J) J  &lt 5 V    &kp D         &kp K      &kp X           &lt 6 H      &lt 6 COMMA  &kp PERIOD  &kp SINGLE_QUOTE  &none
                                  &sk LCTRL  &lt 1 SPACE   &kp TAB    &sk LEFT_SHIFT  &key_repeat
             >;
@@ -602,10 +602,10 @@
 
         NAV {
             bindings = <
-&none   &none   &none   &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none     &none               &kp HOME        &kp UP_ARROW  &kp END    &none          &none
-&trans  &trans  &trans  &trans            &trans          &none     &kp LC(LEFT_ARROW)  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp LC(RIGHT)  &none
-&none   &none   &none   &none             &none           &none     &none               &kp PAGE_DOWN   &kp LS(DOWN)  &kp PG_UP  &none          &none
-                        &trans            &trans          &trans    &mkp MB4            &trans
+&none   &none   &none   &trans  &trans  &none     &none               &kp HOME        &kp UP_ARROW  &kp END    &none          &none
+&trans  &trans  &trans  &trans  &trans  &none     &kp LC(LEFT_ARROW)  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp LC(RIGHT)  &none
+&none   &none   &none   &none   &none   &none     &none               &kp PAGE_DOWN   &kp LS(DOWN)  &kp PG_UP  &none          &none
+                        &trans  &trans  &trans    &trans              &trans
             >;
         };
 
