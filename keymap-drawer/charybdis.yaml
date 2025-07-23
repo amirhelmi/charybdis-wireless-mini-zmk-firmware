@@ -345,9 +345,9 @@ combos:
   k: {t: (, h: '['}
 - p: [31, 19]
   k: BACK SPACE
-- p: [15, 16]
-  k: {t: Ctl+ C, h: Ctl+ V}
-- p: [16, 15, 37]
+- p: [15, 14, 28]
+  k: Ctl+ C
+- p: [16, 15, 26]
   k: {t: Ctl+ V, h: LCTRL}
 - p: [28, 27]
   k: ENTER
@@ -398,7 +398,7 @@ combos:
 - p: [10, 22]
   k: {t: BT, h: '1'}
 - p: [2, 14]
-  k: {t: '&altzero', h: '&altone'}
+  k: '&altzero'
 - p: [7, 19, 8, 20]
   k: Gui+Sft+ S
 - p: [17, 29]
@@ -407,10 +407,6 @@ combos:
   k: '?'
 - p: [32, 20]
   k: '&ctrlback'
-- p: [4, 5]
-  k: F3
-- p: [28, 29]
-  k: F2
 - p: [6, 18]
   k: {t: '&altleft', h: '&althome'}
 - p: [30, 18]
@@ -456,8 +452,8 @@ combos:
 - p: [15, 14]
   k: L CLK
 - p: [3, 15]
-  k: Alt+ 1
+  k: '&altone'
 - p: [33, 32]
   k: L CLK
-- p: [14, 15, 28]
+- p: [15, 16]
   k: CONTEXT MENU
