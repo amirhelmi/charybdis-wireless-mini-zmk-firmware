@@ -152,7 +152,7 @@
         };
 
         copy {
-            bindings = <&kp LC(C)>;
+            bindings = <&mt LC(V) C>;
             key-positions = <15 16>;
             require-prior-idle-ms = <180>;
         };
@@ -218,8 +218,8 @@
             key-positions = <31 32>;
         };
 
-        stickyctrl {
-            bindings = <&sk LEFT_CONTROL>;
+        scrolh {
+            bindings = <&tog 2>;
             key-positions = <15 27>;
         };
 
@@ -441,7 +441,7 @@
 
         menod {
             bindings = <&kp K_CONTEXT_MENU>;
-            key-positions = <14 15 37>;
+            key-positions = <14 15 28>;
         };
     };
 

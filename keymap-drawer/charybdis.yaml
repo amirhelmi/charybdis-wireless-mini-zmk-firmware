@@ -346,7 +346,7 @@ combos:
 - p: [31, 19]
   k: BACK SPACE
 - p: [15, 16]
-  k: Ctl+ C
+  k: {t: C, h: Ctl+ V}
 - p: [16, 15, 37]
   k: {t: Ctl+ V, h: LCTRL}
 - p: [28, 27]
@@ -372,7 +372,7 @@ combos:
 - p: [31, 32]
   k: ENTER
 - p: [15, 27]
-  k: {t: LEFT CONTROL, h: sticky}
+  k: {t: NAV, h: toggle}
 - p: [5, 17]
   k: {t: +, h: '*'}
 - p: [37, 13]
@@ -459,5 +459,5 @@ combos:
   k: Alt+ 1
 - p: [33, 32]
   k: L CLK
-- p: [14, 15, 37]
+- p: [14, 15, 28]
   k: CONTEXT MENU
