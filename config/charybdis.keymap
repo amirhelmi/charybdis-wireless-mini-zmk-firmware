@@ -153,13 +153,13 @@
 
         copy {
             bindings = <&kp LC(C)>;
-            key-positions = <15 14 28>;
+            key-positions = <14 27>;
             require-prior-idle-ms = <180>;
         };
 
         paste {
             bindings = <&mt LCTRL LC(V)>;
-            key-positions = <16 15 26>;
+            key-positions = <16 27>;
             require-prior-idle-ms = <180>;
         };
 
@@ -356,7 +356,7 @@
 
         rightclick {
             bindings = <&mkp RCLK>;
-            key-positions = <26 27>;
+            key-positions = <15 16>;
         };
 
         togglenavigation {
@@ -431,7 +431,7 @@
 
         menod {
             bindings = <&kp K_CONTEXT_MENU>;
-            key-positions = <15 16>;
+            key-positions = <26 27>;
         };
     };
 
