@@ -431,7 +431,7 @@
 
         menod {
             bindings = <&kp K_CONTEXT_MENU>;
-            key-positions = <26 27>;
+            key-positions = <37 15>;
         };
     };
 

@@ -345,9 +345,9 @@ combos:
   k: {t: (, h: '['}
 - p: [31, 19]
   k: BACK SPACE
-- p: [15, 14, 28]
+- p: [14, 27]
   k: Ctl+ C
-- p: [16, 15, 26]
+- p: [16, 27]
   k: {t: Ctl+ V, h: LCTRL}
 - p: [28, 27]
   k: ENTER
@@ -425,7 +425,7 @@ combos:
   k: Ctl+ X
 - p: [4, 16]
   k: {t: '&altdown', h: '&altup'}
-- p: [26, 27]
+- p: [15, 16]
   k: R CLK
 - p: [37, 8, 9, 21, 20]
   k: {t: NAV, h: toggle}
@@ -455,5 +455,5 @@ combos:
   k: '&altone'
 - p: [33, 32]
   k: L CLK
-- p: [15, 16]
+- p: [37, 15]
   k: CONTEXT MENU
