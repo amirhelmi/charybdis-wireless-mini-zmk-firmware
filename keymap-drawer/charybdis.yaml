@@ -37,8 +37,8 @@ layers:
   - .
   - ''''
   - ''
-  - {t: LCTRL, h: sticky}
   - {t: SPACE, h: num}
+  - {t: LCTRL, h: sticky}
   - TAB
   - {t: LEFT SHIFT, h: sticky}
   - '&key_repeat'
@@ -79,8 +79,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
