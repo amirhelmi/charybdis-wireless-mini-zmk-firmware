@@ -345,9 +345,9 @@ combos:
   k: {t: (, h: '['}
 - p: [31, 19]
   k: BACK SPACE
-- p: [14, 27]
+- p: [15, 28]
   k: Ctl+ C
-- p: [16, 27]
+- p: [4, 15]
   k: {t: Ctl+ V, h: LCTRL}
 - p: [28, 27]
   k: ENTER
@@ -455,5 +455,5 @@ combos:
   k: '&altone'
 - p: [33, 32]
   k: L CLK
-- p: [37, 15]
+- p: [15, 36]
   k: CONTEXT MENU

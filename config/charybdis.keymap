@@ -153,13 +153,13 @@
 
         copy {
             bindings = <&kp LC(C)>;
-            key-positions = <14 27>;
+            key-positions = <15 28>;
             require-prior-idle-ms = <180>;
         };
 
         paste {
             bindings = <&mt LCTRL LC(V)>;
-            key-positions = <16 27>;
+            key-positions = <4 15>;
             require-prior-idle-ms = <180>;
         };
 
@@ -431,7 +431,7 @@
 
         menod {
             bindings = <&kp K_CONTEXT_MENU>;
-            key-positions = <37 15>;
+            key-positions = <15 36>;
         };
     };
 
