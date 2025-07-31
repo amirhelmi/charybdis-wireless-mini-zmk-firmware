@@ -434,7 +434,7 @@ combos:
 - p: [40, 19, 20]
   k: '&switchwin'
 - p: [20, 21, 19]
-  k: Ctl+ /
+  k: {t: LCTRL, h: sticky}
 - p: [37, 40]
   k: {t: functionkey, h: sticky}
 - p: [2, 3, 4]

@@ -374,8 +374,8 @@
             key-positions = <40 19 20>;
         };
 
-        comment {
-            bindings = <&kp LC(SLASH)>;
+        sticyctrll {
+            bindings = <&sk LCTRL>;
             key-positions = <20 21 19>;
         };
 
