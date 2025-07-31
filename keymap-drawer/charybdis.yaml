@@ -457,3 +457,5 @@ combos:
   k: L CLK
 - p: [15, 36]
   k: CONTEXT MENU
+- p: [26, 27]
+  k: '&ctrl_click'

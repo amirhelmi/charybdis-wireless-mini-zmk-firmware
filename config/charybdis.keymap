@@ -433,6 +433,11 @@
             bindings = <&kp K_CONTEXT_MENU>;
             key-positions = <15 36>;
         };
+
+        ctrlclick {
+            bindings = <&ctrl_click>;
+            key-positions = <26 27>;
+        };
     };
 
     macros {
@@ -566,6 +571,13 @@
             #binding-cells = <0>;
             bindings = <&kp LS(A) &kp LS(O) &kp LS(H) &kp E &kp N4 &kp J &kp B &kp X &kp G &kp O &kp U &kp F &kp K &kp LS(U) &kp LS(V) &kp H &kp F &kp LS(A) &kp LS(Z) &kp R &kp G &kp V &kp LS(P) &kp N2 &kp LS(Z) &kp Z &kp S &kp LS(F) &kp N6 &kp T &kp N &kp D &kp N9 &kp H &kp N3 &kp C &kp N9 &kp U &kp LS(N) &kp N &kp P &kp G &kp LS(R) &kp R &kp N &kp N &kp N2 &kp LS(O) &kp N6 &kp LS(S) &kp E &kp LS(G) &kp LS(J) &kp LS(Q) &kp LS(Q) &kp LS(J) &kp N9 &kp N9 &kp LS(B) &kp LS(G) &kp LS(A) &kp LS(C) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(I) &kp LS(A) &kp LS(Y) &kp N &kp LS(K) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(S) &kp LS(A) &kp LS(Z) &kp LS(D) &kp LS(O) &kp N1 &kp D &kp N3 &kp N6>;
             label = "REPBOR";
+        };
+
+        ctrl_click: ctrl_click {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sk LCTRL &mkp LCLK>;
+            label = "CTRL_CLICK";
         };
     };
 
