@@ -296,7 +296,7 @@
 
         grave {
             bindings = <&kp GRAVE>;
-            key-positions = <17 29>;
+            key-positions = <16 28>;
         };
 
         question {
@@ -366,7 +366,7 @@
 
         delete {
             bindings = <&kp DELETE>;
-            key-positions = <16 28>;
+            key-positions = <17 29>;
         };
 
         switchwinright {

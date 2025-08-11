@@ -401,7 +401,7 @@ combos:
   k: '&altzero'
 - p: [7, 19, 8, 20]
   k: Gui+Sft+ S
-- p: [17, 29]
+- p: [16, 28]
   k: '`'
 - p: [33, 21]
   k: '?'
@@ -429,7 +429,7 @@ combos:
   k: R CLK
 - p: [37, 8, 9, 21, 20]
   k: {t: NAV, h: toggle}
-- p: [16, 28]
+- p: [17, 29]
   k: DELETE
 - p: [40, 19, 20]
   k: '&switchwin'
