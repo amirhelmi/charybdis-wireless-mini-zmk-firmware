@@ -561,18 +561,18 @@
             label = "E2ERUNCHROME";
         };
 
-        repbor: repbor {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(A) &kp LS(O) &kp LS(H) &kp E &kp N4 &kp J &kp B &kp X &kp G &kp O &kp U &kp F &kp K &kp LS(U) &kp LS(V) &kp H &kp F &kp LS(A) &kp LS(Z) &kp R &kp G &kp V &kp LS(P) &kp N2 &kp LS(Z) &kp Z &kp S &kp LS(F) &kp N6 &kp T &kp N &kp D &kp N9 &kp H &kp N3 &kp C &kp N9 &kp U &kp LS(N) &kp N &kp P &kp G &kp LS(R) &kp R &kp N &kp N &kp N2 &kp LS(O) &kp N6 &kp LS(S) &kp E &kp LS(G) &kp LS(J) &kp LS(Q) &kp LS(Q) &kp LS(J) &kp N9 &kp N9 &kp LS(B) &kp LS(G) &kp LS(A) &kp LS(C) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(I) &kp LS(A) &kp LS(Y) &kp N &kp LS(K) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(S) &kp LS(A) &kp LS(Z) &kp LS(D) &kp LS(O) &kp N1 &kp D &kp N3 &kp N6>;
-            label = "REPBOR";
-        };
-
         ctrl_click: ctrl_click {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&sk LCTRL &mkp LCLK>;
             label = "CTRL_CLICK";
+        };
+
+        repbor: repbor {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp J &kp LS(R) &kp LS(X) &kp LS(L) &kp N5 &kp LS(V) &kp S &kp LS(H) &kp LS(J) &kp R &kp E &kp LS(X) &kp N4 &kp E &kp N7 &kp LS(H) &kp LS(Y) &kp LS(T) &kp LS(T) &kp E &kp LS(I) &kp N7 &kp N6 &kp N5 &kp G &kp C &kp LS(F) &kp LS(Z) &kp LS(G) &kp M &kp N7 &kp C &kp B &kp LS(P) &kp LS(O) &kp LS(M) &kp G &kp N0 &kp D &kp LS(T) &kp G &kp J &kp LS(I) &kp N3 &kp Q &kp LS(A) &kp P &kp N1 &kp N &kp N7 &kp LS(V) &kp N &kp LS(J) &kp LS(Q) &kp LS(Q) &kp LS(J) &kp N9 &kp N9 &kp LS(B) &kp LS(H) &kp LS(A) &kp LS(C) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(I) &kp LS(A) &kp LS(Y) &kp N &kp LS(K) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(S) &kp LS(A) &kp LS(Z) &kp LS(D) &kp LS(O) &kp N3 &kp N8 &kp LS(M) &kp LS(U)>;
+            label = "REPBOR";
         };
     };
 
