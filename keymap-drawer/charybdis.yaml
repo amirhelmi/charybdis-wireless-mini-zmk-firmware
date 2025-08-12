@@ -39,7 +39,7 @@ layers:
   - ''
   - {t: SPACE, h: num}
   - {t: TAB, h: LCTRL}
-  - Ctl+ TAB
+  - {t: num, h: toggle}
   - {t: LEFT SHIFT, h: sticky}
   - '&key_repeat'
   num:
@@ -349,8 +349,6 @@ combos:
   k: Ctl+ C
 - p: [4, 15]
   k: {t: Ctl+ V, h: LCTRL}
-- p: [28, 27]
-  k: ENTER
 - p: [40, 22]
   k: ;
 - p: [2, 3, 4, 7, 8, 9]
@@ -377,7 +375,7 @@ combos:
   k: {t: +, h: '*'}
 - p: [37, 13]
   k: INSERT
-- p: [26, 15]
+- p: [28, 27]
   k: ESCAPE
 - p: [3, 2]
   k: Ctl+ Y

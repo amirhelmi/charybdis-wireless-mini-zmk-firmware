@@ -163,11 +163,6 @@
             require-prior-idle-ms = <180>;
         };
 
-        enterleft {
-            bindings = <&kp ENTER>;
-            key-positions = <28 27>;
-        };
-
         semicolon {
             bindings = <&kp SEMICOLON>;
             key-positions = <40 22>;
@@ -235,7 +230,7 @@
 
         escape {
             bindings = <&kp ESCAPE>;
-            key-positions = <26 15>;
+            key-positions = <28 27>;
         };
 
         redo {
@@ -596,10 +591,10 @@
 
         BASE {
             bindings = <
-&none  &mt LC(Q) Q  &kp L  &kp Y        &kp P          &kp B          &kp Z           &kp F        &kp O        &kp U       &kp SLASH         &none
-&none  &kp C        &kp R  &lt 2 S      &mt LSHIFT T   &kp G          &kp M           &kp N        &kp E        &kp I       &kp A             &none
-&none  &kp W        &kp J  &lt 5 V      &kp D          &kp K          &kp X           &lt 6 H      &lt 6 COMMA  &kp PERIOD  &kp SINGLE_QUOTE  &none
-                           &lt 1 SPACE  &mt LCTRL TAB  &kp LC(TAB)    &sk LEFT_SHIFT  &key_repeat
+&none  &mt LC(Q) Q  &kp L  &kp Y        &kp P          &kp B     &kp Z           &kp F        &kp O        &kp U       &kp SLASH         &none
+&none  &kp C        &kp R  &lt 2 S      &mt LSHIFT T   &kp G     &kp M           &kp N        &kp E        &kp I       &kp A             &none
+&none  &kp W        &kp J  &lt 5 V      &kp D          &kp K     &kp X           &lt 6 H      &lt 6 COMMA  &kp PERIOD  &kp SINGLE_QUOTE  &none
+                           &lt 1 SPACE  &mt LCTRL TAB  &tog 1    &sk LEFT_SHIFT  &key_repeat
             >;
         };
 
