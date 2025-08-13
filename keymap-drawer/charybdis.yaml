@@ -58,7 +58,7 @@ layers:
   - {t: ▽, type: trans}
   - '9'
   - '5'
-  - '1'
+  - {t: '1', h: NAV}
   - '3'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
