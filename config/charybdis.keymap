@@ -376,7 +376,7 @@
 
         nummo {
             bindings = <&sl 4>;
-            key-positions = <37 40>;
+            key-positions = <40 36>;
         };
 
         ctrlf4 {
@@ -421,12 +421,12 @@
 
         lepfff {
             bindings = <&mkp LCLK>;
-            key-positions = <33 32>;
+            key-positions = <20 21>;
         };
 
         menod {
             bindings = <&kp K_CONTEXT_MENU>;
-            key-positions = <15 36>;
+            key-positions = <20 19>;
         };
 
         ctrlclick {
