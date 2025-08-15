@@ -291,7 +291,7 @@
 
         grave {
             bindings = <&kp GRAVE>;
-            key-positions = <16 28>;
+            key-positions = <18 6>;
         };
 
         question {
@@ -306,7 +306,7 @@
 
         althome {
             bindings = <&back_home 0 0>;
-            key-positions = <6 18>;
+            key-positions = <16 28>;
         };
 
         doublequote {

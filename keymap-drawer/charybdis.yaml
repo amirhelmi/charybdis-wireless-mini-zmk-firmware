@@ -37,8 +37,8 @@ layers:
   - .
   - ''''
   - ''
-  - {t: SPACE, h: num}
-  - {t: TAB, h: LCTRL}
+  - {t: SPACE, h: LCTRL}
+  - TAB
   - {t: num, h: toggle}
   - {t: LEFT SHIFT, h: sticky}
   - '&key_repeat'
@@ -79,8 +79,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
+  - '&tobase_space'
+  - {t: BASE, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -369,7 +369,7 @@ combos:
   k: '&statement'
 - p: [31, 32]
   k: ENTER
-- p: [15, 27]
+- p: [19, 20, 21, 22]
   k: {t: NAV, h: toggle}
 - p: [5, 17]
   k: {t: +, h: '*'}
@@ -395,17 +395,17 @@ combos:
   k: {t: BT, h: '0'}
 - p: [10, 22]
   k: {t: BT, h: '1'}
-- p: [2, 14]
+- p: [3, 15]
   k: '&altzero'
 - p: [7, 19, 8, 20]
   k: Gui+Sft+ S
-- p: [16, 28]
+- p: [18, 6]
   k: '`'
 - p: [33, 21]
   k: '?'
 - p: [32, 20]
   k: '&ctrlback'
-- p: [6, 18]
+- p: [16, 28]
   k: {t: '&altleft', h: '&althome'}
 - p: [30, 18]
   k: '"'
@@ -441,7 +441,7 @@ combos:
   k: '&e2eruntsc'
 - p: [40, 30]
   k: '&e2erunchrome'
-- p: [15, 14, 13]
+- p: [28, 27, 31, 32]
   k: Sft+Alt+ F
 - p: [40, 32]
   k: BACK
@@ -449,7 +449,7 @@ combos:
   k: FWD
 - p: [15, 14]
   k: L CLK
-- p: [3, 15]
+- p: [15, 27]
   k: '&altone'
 - p: [33, 32]
   k: L CLK
