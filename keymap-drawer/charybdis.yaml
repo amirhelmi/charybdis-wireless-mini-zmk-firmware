@@ -39,7 +39,7 @@ layers:
   - ''
   - {t: SPACE, h: LCTRL}
   - TAB
-  - {t: num, h: toggle}
+  - Ctl+ TAB
   - {t: LEFT SHIFT, h: sticky}
   - '&key_repeat'
   num:
@@ -411,7 +411,7 @@ combos:
   k: '"'
 - p: [22, 34]
   k: \
-- p: [31, 32, 33]
+- p: [8, 19, 21]
   k: Ctl+ A
 - p: [20, 19, 31, 32]
   k: '&repbor'
@@ -451,9 +451,11 @@ combos:
   k: L CLK
 - p: [15, 27]
   k: '&altone'
-- p: [20, 21]
-  k: L CLK
 - p: [20, 19]
   k: CONTEXT MENU
 - p: [26, 27]
   k: '&ctrl_click'
+- p: [20, 21]
+  k: {t: num, h: toggle}
+- p: [31, 32, 33]
+  k: {t: BASE, h: toggle}

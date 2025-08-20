@@ -304,7 +304,7 @@
             key-positions = <32 20>;
         };
 
-        althome {
+        altlefthome {
             bindings = <&back_home 0 0>;
             key-positions = <16 28>;
         };
@@ -321,7 +321,7 @@
 
         selectall {
             bindings = <&kp LC(A)>;
-            key-positions = <31 32 33>;
+            key-positions = <8 19 21>;
         };
 
         repob {
@@ -419,11 +419,6 @@
             key-positions = <15 27>;
         };
 
-        lepfff {
-            bindings = <&mkp LCLK>;
-            key-positions = <20 21>;
-        };
-
         menod {
             bindings = <&kp K_CONTEXT_MENU>;
             key-positions = <20 19>;
@@ -432,6 +427,16 @@
         ctrlclick {
             bindings = <&ctrl_click>;
             key-positions = <26 27>;
+        };
+
+        tonum {
+            bindings = <&to 1>;
+            key-positions = <20 21>;
+        };
+
+        tobase {
+            bindings = <&to 0>;
+            key-positions = <31 32 33>;
         };
     };
 
@@ -598,10 +603,10 @@
 
         BASE {
             bindings = <
-&none  &mt LC(Q) Q  &kp L  &kp Y            &kp P         &kp B     &kp Z           &kp F        &kp O        &kp U       &kp SLASH         &none
-&none  &kp C        &kp R  &lt 2 S          &mt LSHIFT T  &kp G     &kp M           &kp N        &kp E        &kp I       &kp A             &none
-&none  &kp W        &kp J  &lt 5 V          &kp D         &kp K     &kp X           &lt 6 H      &lt 6 COMMA  &kp PERIOD  &kp SINGLE_QUOTE  &none
-                           &mt LCTRL SPACE  &kp TAB       &tog 1    &sk LEFT_SHIFT  &key_repeat
+&none  &mt LC(Q) Q  &kp L  &kp Y            &kp P         &kp B          &kp Z           &kp F        &kp O        &kp U       &kp SLASH         &none
+&none  &kp C        &kp R  &lt 2 S          &mt LSHIFT T  &kp G          &kp M           &kp N        &kp E        &kp I       &kp A             &none
+&none  &kp W        &kp J  &lt 5 V          &kp D         &kp K          &kp X           &lt 6 H      &lt 6 COMMA  &kp PERIOD  &kp SINGLE_QUOTE  &none
+                           &mt LCTRL SPACE  &kp TAB       &kp LC(TAB)    &sk LEFT_SHIFT  &key_repeat
             >;
         };
 
