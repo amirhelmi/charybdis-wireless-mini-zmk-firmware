@@ -457,5 +457,5 @@ combos:
   k: '&ctrl_click'
 - p: [20, 21]
   k: {t: num, h: toggle}
-- p: [31, 32, 33]
+- p: [40, 20]
   k: {t: BASE, h: toggle}

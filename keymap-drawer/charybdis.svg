@@ -12374,9 +12374,9 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key side"/>
 <rect rx="4" ry="4" x="-6" y="-10" width="12" height="12" class="key"/>
 </g>
-<g transform="translate(322, 100)" class="key keypos-21">
-<rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key side"/>
-<rect rx="4" ry="4" x="-6" y="-10" width="12" height="12" class="key"/>
+<g transform="translate(322, 100)" class="key held keypos-21">
+<rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key held side"/>
+<rect rx="4" ry="4" x="-6" y="-10" width="12" height="12" class="key held"/>
 </g>
 <g transform="translate(350, 104)" class="key keypos-22">
 <rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key side"/>
@@ -12418,17 +12418,17 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key side"/>
 <rect rx="4" ry="4" x="-6" y="-10" width="12" height="12" class="key"/>
 </g>
-<g transform="translate(294, 132)" class="key held keypos-32">
-<rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key held side"/>
-<rect rx="4" ry="4" x="-6" y="-10" width="12" height="12" class="key held"/>
+<g transform="translate(294, 132)" class="key keypos-32">
+<rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key side"/>
+<rect rx="4" ry="4" x="-6" y="-10" width="12" height="12" class="key"/>
 </g>
-<g transform="translate(322, 128)" class="key held keypos-33">
-<rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key held side"/>
-<rect rx="4" ry="4" x="-6" y="-10" width="12" height="12" class="key held"/>
+<g transform="translate(322, 128)" class="key keypos-33">
+<rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key side"/>
+<rect rx="4" ry="4" x="-6" y="-10" width="12" height="12" class="key"/>
 </g>
-<g transform="translate(350, 132)" class="key held keypos-34">
-<rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key held side"/>
-<rect rx="4" ry="4" x="-6" y="-10" width="12" height="12" class="key held"/>
+<g transform="translate(350, 132)" class="key keypos-34">
+<rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key side"/>
+<rect rx="4" ry="4" x="-6" y="-10" width="12" height="12" class="key"/>
 </g>
 <g transform="translate(378, 138)" class="key keypos-35">
 <rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key side"/>
@@ -12454,9 +12454,9 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key side"/>
 <rect rx="4" ry="4" x="-6" y="-10" width="12" height="12" class="key"/>
 </g>
-<g transform="translate(278, 164) rotate(-15.0)" class="key keypos-41">
-<rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key side"/>
-<rect rx="4" ry="4" x="-6" y="-10" width="12" height="12" class="key"/>
+<g transform="translate(278, 164) rotate(-15.0)" class="key held keypos-41">
+<rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key held side"/>
+<rect rx="4" ry="4" x="-6" y="-10" width="12" height="12" class="key held"/>
 </g>
 </g>
 </g>

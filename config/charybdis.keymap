@@ -436,7 +436,7 @@
 
         tobase {
             bindings = <&to 0>;
-            key-positions = <31 32 33>;
+            key-positions = <40 20>;
         };
     };
 
