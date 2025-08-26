@@ -83,18 +83,6 @@
     };
 
     behaviors {
-        mo_repeat: mo_repeat {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
-            tapping-term-ms = <200>;
-            bindings = <&mo>, <&key_repeat>;
-
-            require-prior-idle-ms = <180>;
-            label = "MO_REPEAT";
-            hold-while-undecided;
-        };
-
         back_home: back_home {
             compatible = "zmk,behavior-hold-tap";
             label = "BACK_HOME";
@@ -103,17 +91,6 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <200>;
-        };
-
-        altzero_one: altzero_one {
-            compatible = "zmk,behavior-hold-tap";
-            label = "ALTZERO_ONE";
-            bindings = <&altone>, <&altzero>;
-
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <200>;
-            require-prior-idle-ms = <180>;
         };
 
         altup_down: altup_down {
@@ -125,6 +102,17 @@
             tapping-term-ms = <200>;
             require-prior-idle-ms = <180>;
             flavor = "balanced";
+        };
+
+        rightclick_appmenu: rightclick_appmenu {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RIGHTCLICK_APPMENU";
+            bindings = <&kp>, <&mkp>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            require-prior-idle-ms = <180>;
         };
     };
 
@@ -225,7 +213,7 @@
 
         insert {
             bindings = <&kp INSERT>;
-            key-positions = <37 13>;
+            key-positions = <2 14>;
         };
 
         escape {
@@ -252,11 +240,6 @@
         focus {
             bindings = <&kp LC(E)>;
             key-positions = <16 3>;
-        };
-
-        appmenu {
-            bindings = <&kp K_CONTEXT_MENU>;
-            key-positions = <40 34>;
         };
 
         at {
@@ -321,7 +304,7 @@
 
         selectall {
             bindings = <&kp LC(A)>;
-            key-positions = <8 19 21>;
+            key-positions = <31 32 33>;
         };
 
         repob {
@@ -350,7 +333,7 @@
         };
 
         rightclick {
-            bindings = <&mkp RCLK>;
+            bindings = <&rightclick_appmenu K_CONTEXT_MENU RCLK>;
             key-positions = <15 16>;
         };
 
@@ -369,14 +352,9 @@
             key-positions = <40 19 20>;
         };
 
-        sticyctrll {
-            bindings = <&sk LCTRL>;
-            key-positions = <20 21 19>;
-        };
-
         nummo {
             bindings = <&sl 4>;
-            key-positions = <40 36>;
+            key-positions = <40 37>;
         };
 
         ctrlf4 {
@@ -419,24 +397,19 @@
             key-positions = <15 27>;
         };
 
-        menod {
-            bindings = <&kp K_CONTEXT_MENU>;
-            key-positions = <20 19>;
-        };
-
         ctrlclick {
             bindings = <&ctrl_click>;
             key-positions = <26 27>;
         };
 
         tonum {
-            bindings = <&to 1>;
-            key-positions = <20 21>;
+            bindings = <&tog 1>;
+            key-positions = <20 21 19>;
         };
 
         tobase {
             bindings = <&to 0>;
-            key-positions = <40 20>;
+            key-positions = <7 8 9>;
         };
     };
 
