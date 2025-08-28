@@ -559,6 +559,13 @@
             bindings = <&to 0 &kp SPACE>;
             label = "TOBASE_SPACE";
         };
+
+        tobase_tab: tobase_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 0 &kp TAB>;
+            label = "TOBASE_TAB";
+        };
     };
 
     // ╭──────┬──────┬──────┬──────┬──────┬──────╮  ╭──────┬──────┬──────┬──────┬──────┬──────╮
@@ -588,7 +595,7 @@
 &trans  &trans  &trans  &trans          &trans        &trans    &trans  &trans        &trans  &trans        &trans  &trans
 &trans  &kp N9  &kp N5  &lt 2 NUMBER_1  &kp NUMBER_3  &trans    &trans  &kp NUMBER_2  &kp N0  &kp NUMBER_4  &kp N8  &trans
 &trans  &trans  &trans  &trans          &kp N7        &trans    &trans  &kp NUMBER_6  &trans  &trans        &trans  &trans
-                        &tobase_space   &to 0         &trans    &trans  &trans
+                        &tobase_space   &tobase_tab   &trans    &trans  &trans
             >;
         };
 
