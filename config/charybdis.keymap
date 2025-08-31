@@ -337,11 +337,6 @@
             key-positions = <15 16>;
         };
 
-        togglenavigation {
-            bindings = <&tog 2>;
-            key-positions = <37 8 9 21 20>;
-        };
-
         delete {
             bindings = <&kp DELETE>;
             key-positions = <17 29>;
@@ -410,6 +405,11 @@
         tobase {
             bindings = <&to 0>;
             key-positions = <7 8 9>;
+        };
+
+        stikyctl {
+            bindings = <&sk LCTRL>;
+            key-positions = <21 20>;
         };
     };
 

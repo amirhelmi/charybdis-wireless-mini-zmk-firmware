@@ -423,8 +423,6 @@ combos:
   k: {t: '&altdown', h: '&altup'}
 - p: [15, 16]
   k: {t: R CLK, h: CONTEXT MENU}
-- p: [37, 8, 9, 21, 20]
-  k: {t: NAV, h: toggle}
 - p: [17, 29]
   k: DELETE
 - p: [40, 19, 20]
@@ -453,3 +451,5 @@ combos:
   k: {t: num, h: toggle}
 - p: [7, 8, 9]
   k: {t: BASE, h: toggle}
+- p: [21, 20]
+  k: {t: LCTRL, h: sticky}
