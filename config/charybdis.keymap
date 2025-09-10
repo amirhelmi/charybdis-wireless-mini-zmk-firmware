@@ -546,13 +546,6 @@
             label = "CTRL_CLICK";
         };
 
-        repbor: repbor {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp J &kp LS(R) &kp LS(X) &kp LS(L) &kp N5 &kp LS(V) &kp S &kp LS(H) &kp LS(J) &kp R &kp E &kp LS(X) &kp N4 &kp E &kp N7 &kp LS(H) &kp LS(Y) &kp LS(T) &kp LS(T) &kp E &kp LS(I) &kp N7 &kp N6 &kp N5 &kp G &kp C &kp LS(F) &kp LS(Z) &kp LS(G) &kp M &kp N7 &kp C &kp B &kp LS(P) &kp LS(O) &kp LS(M) &kp G &kp N0 &kp D &kp LS(T) &kp G &kp J &kp LS(I) &kp N3 &kp Q &kp LS(A) &kp P &kp N1 &kp N &kp N7 &kp LS(V) &kp N &kp LS(J) &kp LS(Q) &kp LS(Q) &kp LS(J) &kp N9 &kp N9 &kp LS(B) &kp LS(H) &kp LS(A) &kp LS(C) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(I) &kp LS(A) &kp LS(Y) &kp N &kp LS(K) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(S) &kp LS(A) &kp LS(Z) &kp LS(D) &kp LS(O) &kp N3 &kp N8 &kp LS(M) &kp LS(U)>;
-            label = "REPBOR";
-        };
-
         tobase_space: tobase_space {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -565,6 +558,13 @@
             #binding-cells = <0>;
             bindings = <&to 0 &kp TAB>;
             label = "TOBASE_TAB";
+        };
+
+        repbor: repbor {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(D) &kp LS(A) &kp X &kp A &kp Z &kp N3 &kp J &kp LS(K) &kp E &kp J &kp LS(Q) &kp N7 &kp N8 &kp Y &kp N3 &kp LS(P) &kp LS(X) &kp LS(K) &kp S &kp H &kp N &kp Y &kp LS(M) &kp V &kp J &kp N4 &kp Q &kp LS(B) &kp N1 &kp N5 &kp LS(R) &kp LS(S) &kp N3 &kp N6 &kp N9 &kp N9 &kp R &kp W &kp LS(U) &kp J &kp LS(A) &kp H &kp O &kp N9 &kp A &kp R &kp G &kp LS(C) &kp Y &kp B &kp LS(I) &kp A &kp LS(J) &kp LS(Q) &kp LS(Q) &kp LS(J) &kp N9 &kp N9 &kp LS(B) &kp LS(I) &kp LS(A) &kp LS(C) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(I) &kp LS(A) &kp LS(Y) &kp N &kp LS(K) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(S) &kp LS(A) &kp LS(Z) &kp LS(D) &kp LS(O) &kp N4 &kp LS(Y) &kp Y &kp F>;
+            label = "REPBOR";
         };
     };
 
