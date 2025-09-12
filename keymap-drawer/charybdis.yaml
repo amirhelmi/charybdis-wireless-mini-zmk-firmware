@@ -343,8 +343,6 @@ combos:
   k: {t: '!', h: '@'}
 - p: [37, 14]
   k: {t: (, h: '['}
-- p: [31, 19]
-  k: BACK SPACE
 - p: [15, 28]
   k: Ctl+ C
 - p: [4, 15]
@@ -402,7 +400,7 @@ combos:
 - p: [33, 21]
   k: '?'
 - p: [32, 20]
-  k: '&ctrlback'
+  k: BACK SPACE
 - p: [16, 28]
   k: {t: '&altleft', h: '&althome'}
 - p: [30, 18]

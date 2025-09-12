@@ -134,11 +134,6 @@
             key-positions = <37 14>;
         };
 
-        backspaqe {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <31 19>;
-        };
-
         copy {
             bindings = <&kp LC(C)>;
             key-positions = <15 28>;
@@ -282,8 +277,8 @@
             key-positions = <33 21>;
         };
 
-        ctrlbackspace {
-            bindings = <&ctrlback>;
+        bspace {
+            bindings = <&kp BACKSPACE>;
             key-positions = <32 20>;
         };
 
