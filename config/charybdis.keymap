@@ -327,7 +327,7 @@
             key-positions = <4 16>;
         };
 
-        rightclick {
+        rightclickr {
             bindings = <&rightclick_appmenu K_CONTEXT_MENU RCLK>;
             key-positions = <15 16>;
         };
@@ -407,7 +407,7 @@
             key-positions = <19 31>;
         };
 
-        rightclick {
+        rightclickl {
             bindings = <&mkp LCLK>;
             key-positions = <32 33>;
         };
