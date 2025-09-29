@@ -392,14 +392,14 @@
             key-positions = <26 27>;
         };
 
-        tonum {
+        toggnum {
             bindings = <&tog 1>;
-            key-positions = <20 21 19>;
+            key-positions = <20 21>;
         };
 
         tobase {
             bindings = <&to 0>;
-            key-positions = <20 21>;
+            key-positions = <20 21 19>;
         };
 
         ctrlbacspac {
