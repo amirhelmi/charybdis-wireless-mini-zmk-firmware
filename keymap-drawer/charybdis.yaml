@@ -367,7 +367,7 @@ combos:
   k: '&statement'
 - p: [31, 32]
   k: ENTER
-- p: [19, 20, 21, 40]
+- p: [19, 20, 21, 22]
   k: {t: NAV, h: toggle}
 - p: [7, 19]
   k: {t: +, h: '*'}
