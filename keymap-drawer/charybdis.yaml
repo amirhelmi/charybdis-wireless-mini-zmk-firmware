@@ -39,7 +39,7 @@ layers:
   - ''
   - {t: SPACE, h: LCTRL}
   - TAB
-  - Ctl+ TAB
+  - {t: Ctl+ TAB, h: num}
   - {t: LEFT SHIFT, h: sticky}
   - '&key_repeat'
   num:
@@ -81,7 +81,7 @@ layers:
   - {t: ▽, type: trans}
   - '&tobase_space'
   - '&tobase_tab'
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   NAV:
