@@ -459,3 +459,5 @@ combos:
   k: Sft+ [
 - p: [20, 21, 40]
   k: Sft+ ]
+- p: [28, 14]
+  k: '&formatctrlspace'
