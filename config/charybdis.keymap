@@ -114,6 +114,16 @@
             tapping-term-ms = <200>;
             require-prior-idle-ms = <180>;
         };
+
+        num_num: num_num {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NUM_NUM";
+            bindings = <&mo>, <&tog>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <180>;
+        };
     };
 
     combos {
@@ -392,19 +402,14 @@
             key-positions = <26 27>;
         };
 
-        toggnum {
-            bindings = <&tog 1>;
-            key-positions = <20 21>;
-        };
-
         tobase {
             bindings = <&to 0>;
-            key-positions = <20 21 19>;
+            key-positions = <20 21>;
         };
 
         ctrlbacspac {
             bindings = <&kp LC(BACKSPACE)>;
-            key-positions = <19 31>;
+            key-positions = <19 20 21>;
         };
 
         rightclickl {
@@ -610,10 +615,10 @@
 
         BASE {
             bindings = <
-&none  &mt LC(Q) Q  &kp L  &kp Y            &kp P         &kp B            &kp Z           &kp F        &kp O        &kp U       &kp SLASH         &none
-&none  &kp C        &kp R  &lt 2 S          &mt LSHIFT T  &kp G            &kp M           &kp N        &kp E        &kp I       &kp A             &none
-&none  &kp W        &kp J  &lt 5 V          &kp D         &kp K            &kp X           &lt 6 H      &lt 6 COMMA  &kp PERIOD  &kp SINGLE_QUOTE  &none
-                           &mt LCTRL SPACE  &kp TAB       &lt 1 LC(TAB)    &sk LEFT_SHIFT  &key_repeat
+&none  &mt LC(Q) Q  &kp L  &kp Y            &kp P         &kp B           &kp Z           &kp F        &kp O        &kp U       &kp SLASH         &none
+&none  &kp C        &kp R  &lt 2 S          &mt LSHIFT T  &kp G           &kp M           &kp N        &kp E        &kp I       &kp A             &none
+&none  &kp W        &kp J  &lt 5 V          &kp D         &kp K           &kp X           &lt 6 H      &lt 6 COMMA  &kp PERIOD  &kp SINGLE_QUOTE  &none
+                           &mt LCTRL SPACE  &kp TAB       &num_num 1 1    &sk LEFT_SHIFT  &key_repeat
             >;
         };
 

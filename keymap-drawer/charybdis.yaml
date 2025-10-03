@@ -39,7 +39,7 @@ layers:
   - ''
   - {t: SPACE, h: LCTRL}
   - TAB
-  - {t: Ctl+ TAB, h: num}
+  - {t: num, h: num}
   - {t: LEFT SHIFT, h: sticky}
   - '&key_repeat'
   num:
@@ -446,10 +446,8 @@ combos:
 - p: [26, 27]
   k: '&ctrl_click'
 - p: [20, 21]
-  k: {t: num, h: toggle}
-- p: [20, 21, 19]
   k: {t: BASE, h: toggle}
-- p: [19, 31]
+- p: [19, 20, 21]
   k: Ctl+ BACK SPACE
 - p: [32, 33]
   k: L CLK
