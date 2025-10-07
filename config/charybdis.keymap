@@ -567,7 +567,7 @@
         ctrl_click: ctrl_click {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LCTRL &mkp LCLK>, <&macro_release>;
+            bindings = <&sk LCTRL &mkp LCLK>, <&macro_release>;
 
             label = "CTRL_CLICK";
         };
