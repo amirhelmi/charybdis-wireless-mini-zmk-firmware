@@ -446,8 +446,7 @@
                 <&macro_press>,
                 <&mo 3 &kp LGUI>,
                 <&macro_pause_for_release>,
-                <&macro_release>,
-                <&mo 3 &kp LGUI>;
+                <&macro_release>;
 
             label = "SWITCHWIN";
         };
@@ -567,9 +566,13 @@
         ctrl_click: ctrl_click {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press   &kp LCTRL>
-                    , <&macro_tap  &mkp LCLK>
-                    , <&macro_release &kp LCTRL>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&mkp LCLK>,
+                <&macro_release>,
+                <&kp LCTRL>;
 
             label = "CTRL_CLICK";
         };
@@ -612,7 +615,6 @@
     // ╰──────┴──────┴──────┼──────┼──────┼──────┤  ├──────┼──────┼──────┴──────┴──────┴──────╯
     //                         36     37     38        39     40
     //                      ╰──────┴──────┴──────╯  ╰──────┴──────╯
-
 
     keymap {
         compatible = "zmk,keymap";
