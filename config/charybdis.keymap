@@ -436,6 +436,16 @@
             bindings = <&formatctrlspace>;
             key-positions = <28 14>;
         };
+
+        controltab {
+            bindings = <&kp LC(TAB)>;
+            key-positions = <18 19>;
+        };
+
+        controlshifttab {
+            bindings = <&kp LC(LS(TAB))>;
+            key-positions = <16 17>;
+        };
     };
 
     macros {

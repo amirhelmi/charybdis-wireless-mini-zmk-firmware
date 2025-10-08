@@ -459,3 +459,7 @@ combos:
   k: Sft+ ]
 - p: [28, 14]
   k: '&formatctrlspace'
+- p: [18, 19]
+  k: Ctl+ TAB
+- p: [16, 17]
+  k: Ctl+Sft+ TAB
