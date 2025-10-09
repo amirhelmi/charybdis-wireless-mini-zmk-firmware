@@ -36,12 +36,12 @@ layers:
   - {t: ',', h: scroll}
   - .
   - ''''
-  - ''
+  - '&key_repeat'
   - {t: SPACE, h: LCTRL}
   - TAB
   - {t: num, h: num}
+  - ''''
   - {t: LEFT SHIFT, h: sticky}
-  - '&key_repeat'
   num:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -403,7 +403,7 @@ combos:
   k: BACK SPACE
 - p: [16, 28]
   k: {t: '&altleft', h: '&althome'}
-- p: [30, 18]
+- p: [19, 31]
   k: '"'
 - p: [22, 34]
   k: \
