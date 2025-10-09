@@ -35,8 +35,8 @@ layers:
   - {t: H, h: scroll}
   - {t: ',', h: scroll}
   - .
-  - ''''
   - '&key_repeat'
+  - ''
   - {t: SPACE, h: LCTRL}
   - TAB
   - {t: num, h: num}
