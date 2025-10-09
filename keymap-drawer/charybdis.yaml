@@ -40,8 +40,8 @@ layers:
   - {t: SPACE, h: LCTRL}
   - TAB
   - {t: num, h: num}
-  - {t: CAPS WORD, h: Ctl+ LEFT SHIFT}
-  - {t: '&key_repeat', h: LEFT SHIFT}
+  - {t: LEFT SHIFT, h: sticky}
+  - '&key_repeat'
   num:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
