@@ -612,18 +612,18 @@
             label = "TOBASE_TAB";
         };
 
-        repbor: repbor {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(D) &kp LS(A) &kp X &kp A &kp Z &kp N3 &kp J &kp LS(K) &kp E &kp J &kp LS(Q) &kp N7 &kp N8 &kp Y &kp N3 &kp LS(P) &kp LS(X) &kp LS(K) &kp S &kp H &kp N &kp Y &kp LS(M) &kp V &kp J &kp N4 &kp Q &kp LS(B) &kp N1 &kp N5 &kp LS(R) &kp LS(S) &kp N3 &kp N6 &kp N9 &kp N9 &kp R &kp W &kp LS(U) &kp J &kp LS(A) &kp H &kp O &kp N9 &kp A &kp R &kp G &kp LS(C) &kp Y &kp B &kp LS(I) &kp A &kp LS(J) &kp LS(Q) &kp LS(Q) &kp LS(J) &kp N9 &kp N9 &kp LS(B) &kp LS(I) &kp LS(A) &kp LS(C) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(I) &kp LS(A) &kp LS(Y) &kp N &kp LS(K) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(S) &kp LS(A) &kp LS(Z) &kp LS(D) &kp LS(O) &kp N4 &kp LS(Y) &kp Y &kp F>;
-            label = "REPBOR";
-        };
-
         formatctrlspace: formatctrlspace {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&sk LCTRL &kp SPACE>;
             label = "FORMATCTRLSPACE";
+        };
+
+        repbor: repbor {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(E) &kp LS(D) &kp LS(C) &kp H &kp LS(R) &kp LS(H) &kp LS(O) &kp L &kp LS(U) &kp R &kp LS(V) &kp LS(I) &kp N4 &kp D &kp LS(W) &kp I &kp N2 &kp LS(F) &kp T &kp Z &kp O &kp LS(T) &kp LS(W) &kp T &kp LS(Y) &kp LS(N) &kp F &kp LS(G) &kp LS(I) &kp LS(P) &kp LS(H) &kp LS(W) &kp LS(K) &kp G &kp I &kp G &kp LS(I) &kp N5 &kp LS(V) &kp N3 &kp N4 &kp F &kp LS(H) &kp N0 &kp LS(I) &kp LS(M) &kp J &kp LS(U) &kp N6 &kp N2 &kp G &kp D &kp LS(J) &kp LS(Q) &kp LS(Q) &kp LS(J) &kp N9 &kp N9 &kp LS(B) &kp LS(J) &kp LS(A) &kp LS(C) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(I) &kp LS(A) &kp LS(Y) &kp N &kp LS(K) &kp LS(A) &kp LS(A) &kp LS(A) &kp LS(S) &kp LS(A) &kp LS(Z) &kp LS(D) &kp LS(O) &kp N1 &kp V &kp N2 &kp LS(A)>;
+            label = "REPBOR";
         };
     };
 
