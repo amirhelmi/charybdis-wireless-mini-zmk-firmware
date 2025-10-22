@@ -146,7 +146,7 @@
 
         exclai {
             bindings = <&kp EXCL>;
-            key-positions = <33 21>;
+            key-positions = <19 31>;
         };
 
         lparenth {
@@ -259,7 +259,7 @@
 
         at {
             bindings = <&mt HASH AT>;
-            key-positions = <33 20>;
+            key-positions = <32 21>;
         };
 
         window {
@@ -294,7 +294,7 @@
 
         question {
             bindings = <&kp QUESTION>;
-            key-positions = <21 32>;
+            key-positions = <20 33>;
         };
 
         bspace {
@@ -309,7 +309,7 @@
 
         doublequote {
             bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <19 31>;
+            key-positions = <21 33>;
         };
 
         backslash {
@@ -324,7 +324,7 @@
 
         repob {
             bindings = <&repbor>;
-            key-positions = <20 19 31 32>;
+            key-positions = <20 21 33 32>;
         };
 
         sloganize {
