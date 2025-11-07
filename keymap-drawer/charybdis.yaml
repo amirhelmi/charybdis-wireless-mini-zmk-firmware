@@ -103,11 +103,11 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - ''
-  - Ctl+ LEFT
+  - HOME
   - LEFT
   - DOWN
   - RIGHT
-  - Ctl+ RIGHT
+  - END
   - ''
   - ''
   - ''
@@ -463,3 +463,9 @@ combos:
   k: Ctl+ TAB
 - p: [16, 17]
   k: Ctl+Sft+ TAB
+- p: [6, 7]
+  k: UP ARROW
+- p: [30, 31]
+  k: DOWN
+- p: [36, 37]
+  k: Ctl+ SPACE
