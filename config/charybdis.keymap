@@ -471,6 +471,11 @@
             bindings = <&kp LC(SPACE)>;
             key-positions = <36 37>;
         };
+
+        tonumber {
+            bindings = <&to 1>;
+            key-positions = <15 20>;
+        };
     };
 
     macros {
@@ -657,10 +662,10 @@
 
         BASE {
             bindings = <
-&none  &mt LC(Q) Q  &kp L  &kp Y            &kp P         &kp B           &kp Z           &kp F        &kp O        &kp U       &kp SLASH  &none
-&none  &kp C        &kp R  &lt 2 S          &mt LSHIFT T  &kp G           &kp M           &kp N        &kp E        &kp I       &kp A      &none
-&none  &kp W        &kp J  &lt 5 V          &kp D         &kp K           &kp X           &lt 6 H      &lt 6 COMMA  &kp PERIOD  &kp APOS   &none
-                           &mt LCTRL SPACE  &kp TAB       &num_num 1 1    &sk LEFT_SHIFT  &key_repeat
+&none  &mt LC(Q) Q  &kp L  &kp Y            &kp P         &kp B                         &kp Z           &kp F        &kp O        &kp U       &kp SLASH  &none
+&none  &kp C        &kp R  &lt 2 S          &mt LSHIFT T  &kp G                         &kp M           &kp N        &kp E        &kp I       &kp A      &none
+&none  &kp W        &kp J  &lt 5 V          &kp D         &kp K                         &kp X           &lt 6 H      &lt 6 COMMA  &kp PERIOD  &kp APOS   &none
+                           &mt LCTRL SPACE  &kp TAB       &mt LC(LEFT_SHIFT) LC(TAB)    &sk LEFT_SHIFT  &key_repeat
             >;
         };
 
