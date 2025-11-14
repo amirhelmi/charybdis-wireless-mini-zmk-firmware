@@ -680,9 +680,9 @@
 
         NAV {
             bindings = <
-&none   &none   &none   &trans  &trans  &none     &none     &kp HOME        &kp UP_ARROW  &kp END    &none    &none
-&trans  &trans  &trans  &trans  &trans  &none     &kp HOME  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp END  &none
-&none   &none   &none   &none   &none   &none     &none     &kp PAGE_DOWN   &kp LS(DOWN)  &kp PG_UP  &none    &none
+&none   &none   &none   &trans  &trans  &none     &none     &none            &kp UP_ARROW   &kp END            &none    &none
+&trans  &trans  &trans  &trans  &trans  &none     &kp HOME  &kp LEFT_ARROW   &kp DOWN       &kp RIGHT          &kp END  &none
+&none   &none   &none   &none   &none   &none     &none     &kp LC(PAGE_UP)  &kp PAGE_DOWN  &kp LC(PAGE_DOWN)  &none    &none
                         &trans  &trans  &trans    &trans    &trans
             >;
         };

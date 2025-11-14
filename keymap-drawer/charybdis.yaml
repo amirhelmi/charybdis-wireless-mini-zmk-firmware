@@ -92,7 +92,7 @@ layers:
   - {t: ▽, type: trans}
   - ''
   - ''
-  - HOME
+  - ''
   - UP ARROW
   - END
   - ''
@@ -116,9 +116,9 @@ layers:
   - ''
   - ''
   - ''
+  - Ctl+ PAGE UP
   - PAGE DOWN
-  - Sft+ DOWN
-  - PG UP
+  - Ctl+ PAGE DOWN
   - ''
   - ''
   - {t: ▽, type: trans}
