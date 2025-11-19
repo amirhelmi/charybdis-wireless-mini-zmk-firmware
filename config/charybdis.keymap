@@ -146,7 +146,7 @@
 
         exclai {
             bindings = <&kp EXCL>;
-            key-positions = <19 31>;
+            key-positions = <19 31 7>;
         };
 
         lparenth {
