@@ -26,53 +26,48 @@
 / {
     /* input config for mouse move mode */
 
-    trackball_listener {
-        compatible = "zmk,input-behavior-listener";
-        device = <&vtrackball>;
+   // Define the base listener for the trackball device
+trackball_listener: trackball_listener {
+    compatible = "zmk,input-listener";
+    device = <&vtrackball>;
+    
+    // --- STANDARD MOVEMENT MODE (Layer 0, 7) ---
+    // Scaling: 4/5 (0.8x speed)
+    trackball_default_scaling: trackball_default_scaling {
+        input-processors = <&zip_xy_scaler 4 5>;
         layers = <0 7>;
-        evt-type = <INPUT_EV_REL>;
-        x-input-code = <INPUT_REL_X>;
-        y-input-code = <INPUT_REL_Y>;
-        scale-multiplier = <4>;
-        scale-divisor = <5>;
-
-        // bindings = <&ib_toggle_layer 7>;
     };
 
-    /* input config for snipe mode */
-
-    trackball_snipe_listener {
-        compatible = "zmk,input-behavior-listener";
-        device = <&vtrackball>;
+    // --- SNIPE MODE (Layer 5) ---
+    // Scaling: 1/6 (Very slow, 0.166x speed)
+    trackball_snipe_scaling: trackball_snipe_scaling {
+        input-processors = <&zip_xy_scaler 1 6>;
         layers = <5>;
-        evt-type = <INPUT_EV_REL>;
-        x-input-code = <INPUT_REL_X>;
-        y-input-code = <INPUT_REL_Y>;
-        scale-multiplier = <1>;
-        scale-divisor = <6>;
     };
 
-    /* input config for mouse scroll mode */
-
-    trackball_scroll_listener {
-        compatible = "zmk,input-behavior-listener";
-        device = <&vtrackball>;
-        layers = <2 6>;
-        evt-type = <INPUT_EV_REL>;
-        x-input-code = <INPUT_REL_MISC>;
-        y-input-code = <INPUT_REL_WHEEL>;
+    // --- SCROLL MODE (Layer 2, 6) ---
+    // Changes input codes to scroll, inverts Y, and scales scroll speed.
+    trackball_scroll_mode: trackball_scroll_mode {
+        // ZMK input-listener handles changing the X/Y codes implicitly for scroll
+        // Y-axis will be inverted (for natural scrolling)
         y-invert;
-        bindings = <&ib_wheel_scaler 1 14>;
-    };
+        layers = <2 6>;
 
-    /* define a resolution down scaler only for INPUT_REL_WHEEL */
-
-    ib_wheel_scaler: ib_wheel_scaler {
-        compatible = "zmk,input-behavior-scaler";
-        #binding-cells = <2>;
-        evt-type = <INPUT_EV_REL>;
-        input-code = <INPUT_REL_WHEEL>;
+        // The bindings property moves here. It applies the wheel scaler processor
+        // for this layer block, using a 1/14 scaling for the scroll wheel data.
+        input-processors = <&zip_wheel_scaler 1 14>;
     };
+};
+
+// --- Input Processor Definition ---
+// Define the wheel scaler processor separately as a reusable component.
+zip_wheel_scaler: zip_wheel_scaler {
+    // This processor applies custom scaling only to the wheel (scroll) axis data.
+    compatible = "zmk,input-processor-wheel-scaler";
+    #binding-cells = <2>;
+};
+
+
 
     /* adjust cooldown waiting period for mouse key layer after activated */
 
@@ -656,6 +651,7 @@
     // ╰──────┴──────┴──────┼──────┼──────┼──────┤  ├──────┼──────┼──────┴──────┴──────┴──────╯
     //                         36     37     38        39     40
     //                      ╰──────┴──────┴──────╯  ╰──────┴──────╯
+
 
     keymap {
         compatible = "zmk,keymap";
