@@ -80,7 +80,7 @@ zip_wheel_scaler: zip_wheel_scaler {
     behaviors {
         back_home: back_home {
             compatible = "zmk,behavior-hold-tap";
-            label = "BACK_HOME";
+            
             bindings = <&althome>, <&altleft>;
 
             #binding-cells = <2>;
@@ -90,7 +90,7 @@ zip_wheel_scaler: zip_wheel_scaler {
 
         shift_repeat: shift_repeat {
             compatible = "zmk,behavior-hold-tap";
-            label = "SHIFT_REPEAT";
+            
             bindings = <&kp>, <&key_repeat>;
 
             #binding-cells = <2>;
@@ -101,7 +101,7 @@ zip_wheel_scaler: zip_wheel_scaler {
 
         rightclick_appmenu: rightclick_appmenu {
             compatible = "zmk,behavior-hold-tap";
-            label = "RIGHTCLICK_APPMENU";
+            
             bindings = <&kp>, <&mkp>;
 
             #binding-cells = <2>;
@@ -112,7 +112,7 @@ zip_wheel_scaler: zip_wheel_scaler {
 
         num_num: num_num {
             compatible = "zmk,behavior-hold-tap";
-            label = "NUM_NUM";
+            
             bindings = <&mo>, <&to>;
 
             #binding-cells = <2>;
@@ -122,7 +122,7 @@ zip_wheel_scaler: zip_wheel_scaler {
 
         caps_ctrl_shift: caps_ctrl_shift {
             compatible = "zmk,behavior-hold-tap";
-            label = "CAPS_CTRL_SHIFT";
+            
             bindings = <&kp>, <&caps_word>;
 
             #binding-cells = <2>;
@@ -729,3 +729,4 @@ zip_wheel_scaler: zip_wheel_scaler {
         };
     };
 };
+
