@@ -471,6 +471,11 @@
             bindings = <&to 1>;
             key-positions = <15 20>;
         };
+
+        newmacron {
+            bindings = <&new_macro>;
+            key-positions = <32 20 21 33>;
+        };
     };
 
     macros {

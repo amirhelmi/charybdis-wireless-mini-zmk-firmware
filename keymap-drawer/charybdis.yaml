@@ -469,3 +469,5 @@ combos:
   k: Ctl+ SPACE
 - p: [15, 20]
   k: {t: num, h: toggle}
+- p: [32, 20, 21, 33]
+  k: '&new_macro'
