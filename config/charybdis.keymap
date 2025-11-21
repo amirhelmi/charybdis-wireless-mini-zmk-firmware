@@ -322,11 +322,6 @@
             key-positions = <31 32 33>;
         };
 
-        newmacron {
-            bindings = <&new_macro>;
-            key-positions = <20 21 33 32>;
-        };
-
         sloganize {
             bindings = <&slogan>;
             key-positions = <16 28 27 15>;
