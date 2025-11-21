@@ -74,14 +74,15 @@
     // Defines the Input Processor node for X/Y movement scaling
     zip_xy_scaler: zip_xy_scaler {
  #input-processor-cells = <2>;
-        compatible = "zmk,input-processor-xy-scaler";
+        compatible = "zmk,xy-scaler";
         #binding-cells = <2>;
     };
 
     // Defines the Input Processor node for scroll wheel scaling
     zip_wheel_scaler: zip_wheel_scaler {
-        compatible = "zmk,input-processor-wheel-scaler";
+        compatible = "zmk,xy-scaler";
         #binding-cells = <2>;
     };
 };
+
 
