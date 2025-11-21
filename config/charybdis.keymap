@@ -6,17 +6,28 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-// ... (sk, lt, mt settings remain unchanged)
+&sk { quick-release; };
+
+&lt {
+    require-prior-idle-ms = <150>;
+    tapping-term-ms = <280>;
+    quick-tap-ms = <175>;
+    hold-trigger-on-release;
+    flavor = "balanced";
+};
+
+&mt {
+    flavor = "balanced";
+    require-prior-idle-ms = <175>;
+    tapping-term-ms = <280>;
+    quick-tap-ms = <180>;
+    hold-trigger-on-release;
+};
 
 / {
-    // ... (existing behavior definitions remain unchanged)
+    // --- NEW SENSOR UTILITY BEHAVIORS FOR SCALING ---
 
-    // 👇 ADD NEW SENSOR UTILITY BEHAVIORS FOR SCALING
     behaviors {
-        // ... (existing behaviors like back_home, shift_repeat, etc. remain unchanged)
-
-        // --- NEW TRACKBALL BEHAVIORS ---
-
         // Standard Speed (4/5 scaling)
         sensor_standard: sensor_standard {
             compatible = "zmk,behavior-sensor-util";
@@ -31,133 +42,67 @@
             bindings = <&sensor_util_mouse_move 1 6>; // (1 / 6) = ~0.16 scale
         };
 
-        // Scroll Speed (1/14 scaling for scroll, replacing ib_wheel_scaler)
+        // Scroll Speed (1/14 scaling for scroll)
         sensor_scroll_scaler: sensor_scroll_scaler {
             compatible = "zmk,behavior-sensor-util";
             sensor-id = <&vtrackball>;
             bindings = <&sensor_util_mouse_scroll 1 14>; // (1 / 14) scale
         };
 
-        // ... (existing behavior definitions continue)
-    };
-    
-    // --- TRACKBALL LISTENERS (CLEANED) ---
+        // Existing behaviors (truncated for brevity, keep all yours here)
+        back_home: back_home {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BACK_HOME";
+            bindings = <&althome>, <&altleft>;
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+        };
 
-    /* input config for mouse move mode */
-    trackball_listener {
+        shift_repeat: shift_repeat {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SHIFT_REPEAT";
+            bindings = <&kp>, <&key_repeat>;
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            require-prior-idle-ms = <180>;
+            flavor = "tap-unless-interrupted";
+        };
+        
+        rightclick_appmenu: rightclick_appmenu {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RIGHTCLICK_APPMENU";
+            bindings = <&kp>, <&mkp>;
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            require-prior-idle-ms = <180>;
+        };
+
+        num_num: num_num {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NUM_NUM";
+            bindings = <&mo>, <&to>;
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <180>;
+        };
+
+        caps_ctrl_shift: caps_ctrl_shift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "CAPS_CTRL_SHIFT";
+            bindings = <&kp>, <&caps_word>;
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+        };
+    };
+
+    // --- TRACKBALL LISTENERS (CLEANED AND FIXED) ---
+
+    /* input config for mouse move mode (Standard) */
+    trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         device = <&vtrackball>;
         
-        // REPLACED 'layers' property with &zip_conditional_layer input processor
-        // which matches old functionality but uses the new syntax.
-        // The old functionality was likely 'activate layer 7 when layer 0 is active'
-        // &zip_conditional_layer <target_layer> <condition_layer>
-        input-processors = <&zip_conditional_layer 7 0>; 
-        
-        evt-type = <INPUT_EV_REL>;
-        x-input-code = <INPUT_REL_X>;
-        y-input-code = <INPUT_REL_Y>;
-        
-        // DEPRECATED PROPERTIES REMOVED: layers, scale-multiplier, scale-divisor
-    };
-
-    /* input config for snipe mode */
-    trackball_snipe_listener {
-        compatible = "zmk,input-listener";
-        device = <&vtrackball>;
-        
-        // REPLACED 'layers' property with &zip_conditional_layer
-        // Activate layer 5 when layer 5 is active (meaning: use this listener when on layer 5)
-        input-processors = <&zip_conditional_layer 5 5>;
-        
-        evt-type = <INPUT_EV_REL>;
-        x-input-code = <INPUT_REL_X>;
-        y-input-code = <INPUT_REL_Y>;
-        
-        // DEPRECATED PROPERTIES REMOVED: layers, scale-multiplier, scale-divisor
-    };
-
-    /* input config for mouse scroll mode */
-    trackball_scroll_listener {
-        compatible = "zmk,input-listener";
-        device = <&vtrackball>;
-        
-        // REPLACED 'layers' property with &zip_conditional_layer
-        // Activate layer 6 OR 2 based on movement when one of them is active.
-        // This old usage is ambiguous, using zip_conditional_layer for the primary layer (2) for simplicity.
-        // Use &zip_conditional_layer 2 2 if you only want the listener active on layer 2.
-        // For the old 'layers = <2 6>', it means this listener is active on both. 
-        // ZMK does not have a single processor for OR conditions, so we'll use layer 2 and adjust keymap.
-        input-processors = <&zip_conditional_layer 2 2>;
-        
-        evt-type = <INPUT_EV_REL>;
-        x-input-code = <INPUT_REL_MISC>;
-        y-input-code = <INPUT_REL_WHEEL>;
-        y-invert;
-        
-        // REPLACED 'bindings = <&ib_wheel_scaler 1 14>;' 
-        // Scroll scaling must be handled via the keymap now. REMOVED.
-    };
-
-    // DEPRECATED NODES REMOVED:
-    // ib_wheel_scaler: ib_wheel_scaler { ... } 
-    // ib_toggle_layer: ib_toggle_layer { ... }
-    
-    // ... (existing combos and macros remain unchanged)
-    
-    keymap {
-        compatible = "zmk,keymap";
-
-        // --- KEYMAP FIXES: ADD SENSOR UTILS TO LAYERS ---
-
-        BASE {
-            bindings = <
-// ... first row ...
-&none  &mt LC(Q) Q  &kp L  &kp Y             &kp P          &kp B                      &kp Z           &kp F        &kp O        &kp U        &kp SLASH  &none
-&none  &kp C        &kp R  &lt 2 S           &mt LSHIFT T   &kp G                      &kp M           &kp N        &kp E        &kp I        &kp A      &none
-&none  &kp W        &kp J  &lt 5 V           &kp D          &kp K                      &kp X           &lt 6 H        &lt 6 COMMA    &kp PERIOD   &kp APOS   &none
-                     &mt LCTRL SPACE &kp TAB             &mt LC(LEFT_SHIFT) LC(TAB) &sk LEFT_SHIFT &key_repeat
-            >;
-            // 👇 ADD STANDARD SPEED SENSOR UTILITY TO BASE LAYER
-            sensor-bindings = <&sensor_standard>;
-        };
-
-        // ... (Layer 'num' 1, Layer 'NAV' 3, Layer 'switch' 4, Layer 'functionkey' 8 remain unchanged)
-
-        // NAV is Layer 2 (from the lt 2 S binding)
-        NAV {
-            bindings = <
-// ...
-            >;
-            // 👇 ADD SCROLL SPEED SENSOR UTILITY TO LAYER 2 (NAV/SCROLL)
-            sensor-bindings = <&sensor_scroll_scaler>;
-        };
-
-        // snipe is Layer 5 (from the lt 5 V binding)
-        snipe {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &mo 7   &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
-            >;
-            // 👇 ADD SNIPE SPEED SENSOR UTILITY TO LAYER 5 (SNIPE)
-            sensor-bindings = <&sensor_snipe>;
-        };
-
-        // scroll is Layer 6 (from the lt 6 H/COMMA binding)
-        scroll {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &mo 7   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &mkp MB4  &mkp MB5
-            >;
-            // 👇 ADD SCROLL SPEED SENSOR UTILITY TO LAYER 6 (SCROLL)
-            sensor-bindings = <&sensor_scroll_scaler>;
-        };
-
-        // ... (other layers remain unchanged)
-    };
-};
-
+        // Listen if layer 0 OR layer 7
