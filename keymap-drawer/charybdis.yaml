@@ -409,8 +409,6 @@ combos:
   k: \
 - p: [31, 32, 33]
   k: Ctl+ A
-- p: [20, 21, 33, 32]
-  k: '&repbor'
 - p: [16, 28, 27, 15]
   k: '&slogan'
 - p: [15, 14, 26, 27]
@@ -471,3 +469,5 @@ combos:
   k: Ctl+ SPACE
 - p: [15, 20]
   k: {t: num, h: toggle}
+- p: [32, 20, 21, 33]
+  k: '&new_macro'
