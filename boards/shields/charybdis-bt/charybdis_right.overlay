@@ -38,10 +38,48 @@
     status = "okay";
 };
 
-// https://github.com/badjeff/zmk-pmw3610-driver
+// This block defines the full trackball functionality
 / {
-  trackball_listener {
-    compatible = "zmk,input-listener";
-    device = <&trackball>;
-  };
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+        
+        // --- STANDARD MOVEMENT MODE (Layer 0, 7) ---
+        // Uses the defined zip_xy_scaler node with a scaling value of 4/5
+        trackball_default_scaling: trackball_default_scaling {
+            input-processors = <&zip_xy_scaler 4 5>;
+            layers = <0 7>;
+        };
+
+        // --- SNIPE MODE (Layer 5) ---
+        // Uses the defined zip_xy_scaler node with a slower scaling value of 1/6
+        trackball_snipe_scaling: trackball_snipe_scaling {
+            input-processors = <&zip_xy_scaler 1 6>;
+            layers = <5>;
+        };
+
+        // --- SCROLL MODE (Layer 2, 6) ---
+        // Uses the defined zip_wheel_scaler node with inverted Y and a 1/14 scale
+        trackball_scroll_mode: trackball_scroll_mode {
+            y-invert;
+            layers = <2 6>;
+            input-processors = <&zip_wheel_scaler 1 14>;
+        };
+    };
+};
+
+// Add this block to boards/shields/charybdis-bt/charybdis_right.overlay
+
+/ {
+    // Defines the Input Processor node for X/Y movement scaling
+    zip_xy_scaler: zip_xy_scaler {
+        compatible = "zmk,input-processor-xy-scaler";
+        #binding-cells = <2>;
+    };
+
+    // Defines the Input Processor node for scroll wheel scaling
+    zip_wheel_scaler: zip_wheel_scaler {
+        compatible = "zmk,input-processor-wheel-scaler";
+        #binding-cells = <2>;
+    };
 };
