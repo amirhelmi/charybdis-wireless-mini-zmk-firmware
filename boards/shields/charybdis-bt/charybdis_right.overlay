@@ -80,9 +80,10 @@
 
     // Defines the Input Processor node for scroll wheel scaling
     zip_wheel_scaler: zip_wheel_scaler {
-        compatible = "zmk,xy-scaler";
+        compatible = "zmk,wheel-scaler";
         #binding-cells = <2>;
     };
 };
+
 
 
