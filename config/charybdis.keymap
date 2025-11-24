@@ -136,7 +136,7 @@
 
         rparenth {
             bindings = <&mt RIGHT_BRACKET RIGHT_PARENTHESIS>;
-            key-positions = <40 21 22>;
+            key-positions = <40 21>;
         };
 
         exclai {
